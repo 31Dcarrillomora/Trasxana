@@ -207,6 +207,15 @@ html {
     background-color: #4e4e4e;
 }
 /**---------------------------------------------*/
+.mes-plan{
+    font-size: 20px;
+    position: relative;
+top: -20px;
+left: 220px;
+color: #f4f4f4;
+background-color: #00b7ff;
+width: 50px;
+}
 
 .plan-name{
     font-size: 30px;
@@ -219,10 +228,7 @@ html {
 }
 
 
-.mes-plan{
-    text-align: end;
-    transform: translateY(-40px);
-}
+
 
 .precio-plan {
     text-align: start;
