@@ -4,7 +4,7 @@ html {
     margin: 0; /* Quitamos el espacio en blanco alrededor de la página */
     padding: 0; /* No agregamos espacio extra adentro de la página */
     background-color: #f4f4f4; /* Ponemos el fondo de la página de color gris claro */
-    width: 83.7%;
+    width: 64.0%;
 }
 /**----------------------------------------Menu-------------------------------------------------------------------------*/
 
@@ -23,7 +23,7 @@ html {
     white-space: nowrap; /* Evita que las palabras se separen en líneas, manteniendo el menú en una sola línea */
     position: relative; /* La posición del menú se ajusta respecto a su contenedor */
     top: -8px; /*menú hacia arriba */
-    margin-left: 20px; /* Lo mueve un poquito hacia la derecha */
+    margin-left: 250px; /* Lo mueve un poquito hacia la derecha */
     z-index: 1;
 }
 
@@ -109,6 +109,8 @@ html {
 .welcome{
     color: rgb(224, 172, 1);
     text-align: center;
+    transform: translateX(25%);
+    
     
 }
 
@@ -118,7 +120,7 @@ html {
 .contenedor{
     padding: 10px;
     margin: 1px;
-    width: 118%;
+    width: 155%;
 }
 .tarjetas{
     display: grid;
@@ -130,24 +132,26 @@ html {
     text-align: center;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     gap: 10px;
+    position:static;
+    height: 1000px;
    
     
 }
 /**------------------------------------------------CONTENIDO PROYECTOS--------------------------------------------------------*/
-.contenedor-proyectos {
+.contenedor-pagos {
     z-index: 0;
     position: relative;
     gap:20px ; /* Espacio entre filas y columnas */
     display: grid; /* Usamos flex para centrar el contenido */
     margin: 0 auto;
    transform: translateY(-280.1%);
-   height: 80px;
+   height: 90px;
    position: relative;
-    margin-left: 13.5%;
-    width: 15.7%;
+    margin-left: 2.5%;
+    width: 17.5%;
    
 }
-.tarjetas-proyectos {
+.tarjetas-pagos {
     z-index: 0;
     position: relative;
     background-color: #fffcfc;
@@ -156,21 +160,65 @@ html {
     text-align: center;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra del contenedor */
     transition: transform 0.3s ease;
-    height:449px;
+    height:880px;
 }
 
-
-.p-contenido{
-    font-size: 22px;
+/**-----------Contenido Hostinger--------------*/
+.plan-name1{
+    font-size: 25px;
     text-align: start;
-
-
+    text-align: center;
 }
-.plan-name{
+
+.logo-Hostinger{
+    width: 100px;
+    height: 100px;
+}
+
+.Text_Hostinger{
     font-size: 20px;
+    align-content: center;
+}
+
+.text_hostinger-02{
+    font-size: 20px;
+    text-align: start;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+.Boton_Hostinger{
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #d60a0a; /* Color del botón */
+    border: none;
+    border-radius: 8px; /* Bordes redondeados */
+    text-align: center;
+    text-decoration: none; /* Sin subrayado */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    transition: background-color 0.3s ease; /* Animación suave */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+.Boton_Hostinger:hover{
+    background-color: #4e4e4e;
+}
+/**---------------------------------------------*/
+
+.plan-name{
+    font-size: 30px;
     transform: translateX(20px);
     text-align: start;
 }
+.p-contenido{
+    font-size: 15px;
+    text-align: start;
+}
+
+
 .mes-plan{
     text-align: end;
     transform: translateY(-40px);
@@ -193,7 +241,7 @@ footer {
     position: relative;
     left: -50px;
     padding: 20px 0; /* Espacio interno dentro del pie de página */
-    width: 125.0%; /* Añadido para mantener consistencia */
+    width: 164.1%; /* Añadido para mantener consistencia */
     transform: translateY(48px);
 }
 
@@ -290,35 +338,35 @@ footer .social-media a {
 
 /* desconocido (más de 100px) */
 @media (min-width: 100px) {
-    .contenedor-proyectos {
+    .contenedor-pagos {
         grid-template-columns: 351%;
         
        }}  
 
 /* desconocido (más de 200px) */
 @media (min-width: 200px) {
-    .contenedor-proyectos {
+    .contenedor-pagos {
         grid-template-columns: 351%;
         
        }}  
 
 /* desconocido (más de 300px) */
 @media (min-width: 300px) {
-    .contenedor-proyectos {
+    .contenedor-pagos {
         grid-template-columns: 351%;
         
        }}  
 
 /* desconocido (más de 400px) */
 @media (min-width: 400px) {
-    .contenedor-proyectos {
+    .contenedor-pagos {
         grid-template-columns: 351%;
         
        }}  
 
 
 @media (max-width: 480px) {
-    .contenedor-proyectos {
+    .contenedor-pagos {
         grid-template-columns: 351%;
         
        }}  
@@ -326,14 +374,14 @@ footer .social-media a {
 
 /* desconocido (más de 500px) */
 @media (min-width: 500px) {
-    .contenedor-proyectos {
+    .contenedor-pagos {
         grid-template-columns: 351%;
         
        }}  
 
 /* desconocido (más de 600px) */
 @media (min-width: 600px) {
-    .contenedor-proyectos {
+    .contenedor-pagos {
         grid-template-columns: 351%;
         
        }}  
@@ -341,28 +389,28 @@ footer .social-media a {
 
 /* desconocido (más de 700px) */
 @media (min-width: 700px) {
-    .contenedor-proyectos {
+    .contenedor-pagos {
         grid-template-columns: 351%;
         
        }}  
 
 /* desconocido (más de 800px) */
 @media (min-width: 800px) {
-    .contenedor-proyectos {
+    .contenedor-pagos {
         grid-template-columns: 351%;
         
        }}  
         
 /* desconocido (más de 900px) */
 @media (min-width: 900px) {
-    .contenedor-proyectos {
+    .contenedor-pagos {
         grid-template-columns: 351%;
         
        }}  
 
 /* desconocido (más de 1000px) ----*/
 @media (min-width: 1000px) {
-    .contenedor-proyectos {
+    .contenedor-pagos {
         grid-template-columns: 351%;
         
        }}  
@@ -370,14 +418,14 @@ footer .social-media a {
 
 /* Para pantallas medianas (tablets) */
 @media (min-width: 768px) {
-    .contenedor-proyectos {
+    .contenedor-pagos {
         grid-template-columns: 351% 351%;
         
        }}  
            
 /* Para pantallas grandes (laptops y escritorios) */
 @media (min-width: 1025px) {
-    .contenedor-proyectos {
+    .contenedor-pagos {
         grid-template-columns: 291% 291% 291% 291%;
         
        }}  
@@ -385,7 +433,7 @@ footer .social-media a {
 
        /* Media queries para dispositivos más pequeños */
 @media (max-width: 1200px) {
-    .contenedor-proyectos {
+    .contenedor-pagos {
         grid-template-columns: 351% 351%;
         
        }}  

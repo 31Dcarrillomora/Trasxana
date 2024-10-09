@@ -23,7 +23,7 @@ html {
     white-space: nowrap; /* Evita que las palabras se separen en líneas, manteniendo el menú en una sola línea */
     position: relative; /* La posición del menú se ajusta respecto a su contenedor */
     top: -8px; /*menú hacia arriba */
-    margin-left: 20px; /* Lo mueve un poquito hacia la derecha */
+    margin-left: 250px; /* mover de derecha a izquierda */
     z-index: 1;
 }
 
