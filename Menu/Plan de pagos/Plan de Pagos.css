@@ -9,7 +9,7 @@ html {
 /**----------------------------------------Menu-------------------------------------------------------------------------*/
 
 .menu-container { /* Contenedor del menú */
-    width: 87.4%; /* El menú ocupa todo el ancho de la página */
+    width: 60.0%; /* El menú ocupa todo el ancho de la página */
     display: grid; /* Usamos flex para centrar el contenido */
     justify-content: center; /* Centramos el contenido horizontalmente */
     z-index: 1000;
@@ -25,6 +25,7 @@ html {
     top: -8px; /*menú hacia arriba */
     margin-left: 483px; /* Lo mueve un poquito hacia la derecha */
     z-index: 1;
+   
 }
 
 /* Estilo de la lista dentro del menú */
@@ -33,59 +34,62 @@ html {
     margin: 0; /* Quita el espacio entre los elementos de la lista */
     padding: 0; /* Quita el espacio dentro de los elementos de la lista */
     display: flex; /* Organiza los elementos de la lista uno al lado del otro */
+    
 }
 
 /* Estilo de cada ítem de la lista del menú */
 .menu ul li {
     position: relative; /* La posición de cada ítem se ajusta respecto a su contenedor */
-    left: 20px;
+    left: 130px;
+ 
 }
 
 /* Estilo de los enlaces dentro de cada ítem del menú */
 .menu ul li a {
     display: block; /* Hace que los enlaces ocupen todo el espacio disponible del ítem */
     padding: 15px 20px; /* Espacio dentro del enlace para que se vea más grande y fácil de hacer clic */
-    color: white; /* Color del texto del enlace es blanco */
+    color: rgb(255, 255, 255); /* Color del texto del enlace es blanco */
     text-decoration: none; /* Quita el subrayado del enlace */
     transition: background-color 0.3s; /* El color de fondo cambia suavemente cuando pasas el mouse sobre el enlace */
     z-index: 1000;
+    
 }
 
 /* Cambio de color de fondo cuando pasas el mouse sobre el enlace */
 .menu ul li a:hover {
     background-color: #363434; /* Cambia el color de fondo del enlace a gris oscuro cuando pasas el mouse */
     z-index: 1000;
+    
 }
 
 /* Estilo del menú desplegable */
-.menu ul li ul.submenu {
+.menu ul li ul {
     position: fixed;
     display: none; /* Al principio, los submenús no se ven */
-    width: 90px;
+    width: 149px;
     position: absolute; /* Los submenús se colocan en una posición específica respecto al menú principal */
     top: 100%; /* Los submenús aparecen debajo del ítem del menú al que pertenecen */
-    left: 0; /* Los submenús aparecen alineados a la izquierda del ítem del menú */
+     /* Los submenús aparecen alineados a la izquierda del ítem del menú */
     background-color: #333333; /* Fondo del submenú es gris oscuro */
     border-radius: 0 0 5px 5px; /* Borde redondeado en la parte inferior */
     text-align: center;
-    padding-left: 10px;/**derecha*/
-   padding-right:40px;/**izquierda*/
    z-index: 999;
+
     
 }
 
 /* Estilo de cada ítem dentro del submenú */
-.menu ul li ul.submenu li {
+.menu ul li ul li {
     display: block; /* Cada ítem del submenú aparece en una línea nueva */
     z-index: 1000;
 }
-.menu ul li:hover ul.submenu {
+.menu ul li:hover ul {
     display: block; /* El submenú aparece cuando pasas el mouse sobre el ítem del menú */
     z-index: 999;
 }
 
 /* Estilo de los enlaces dentro del submenú */
-.menu ul li ul.submenu li a {
+.menu ul li ul li a {
     padding: 10px 30px; /* Espacio dentro del enlace del submenú */
     text-align: center;
     padding-left: 0px;
@@ -93,16 +97,29 @@ html {
     z-index: 1000;
 }
 
-/* Cambio de color de fondo cuando pasas el mouse sobre el enlace del submenú */
-.menu ul li ul.submenu li a:hover {
+
+.submenu a{
+    width: 130px;
     position: relative;
-    background-color: #363434; /* Cambia el color de fondo del enlace a gris oscuro cuando pasas el mouse */
-   transform: translateX(-19px);
+    left: -90%;
+    text-align: center;
+}
+.menu ul li ul li :hover {
+    position: relative;
+    background-color: #969494; /* Cambia el color de fondo del enlace a gris oscuro cuando pasas el mouse */
+   transform: translateX(-5px);
    text-align: center;
-   padding-left: 10px;/**derecha*/
-   padding-right:20px;/**izquierda*/
+   margin-left: -0px;
    z-index: 1000;
 }
+
+
+/**---------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
 
 /**---------------------------------------------------------------------------------------------------------------------*/
 
