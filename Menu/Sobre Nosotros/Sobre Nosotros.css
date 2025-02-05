@@ -1,22 +1,24 @@
-
-html {
+/* Small devices (landscape phones, 320px and up)📱*/
+@media (max-width: 320px) {
+  html {
     font-family: Arial, sans-serif; /* Usamos la letra Arial para todo el texto */
     margin: 0; /* Quitamos el espacio en blanco alrededor de la página */
     padding: 0; /* No agregamos espacio extra adentro de la página */
     background-color: #f4f4f4; /* Ponemos el fondo de la página de color gris claro */
-width: 83.7%;
-}
-/**----------------------------------------Menu-------------------------------------------------------------------------*/
+    width: 83.7%;
+  }
+  /**----------------------------------------Menu-------------------------------------------------------------------------*/
 
-.menu-container { /* Contenedor del menú */
+  .menu-container {
+    /* Contenedor del menú */
     width: 87.4%; /* El menú ocupa todo el ancho de la página */
     display: grid; /* Usamos flex para centrar el contenido */
     justify-content: center; /* Centramos el contenido horizontalmente */
     z-index: 1000;
-}
+  }
 
-
-.menu { /* Estilo del menú principal */
+  .menu {
+    /* Estilo del menú principal */
     background-color: #0b79d3; /* Color de fondo del menú amarillo */
     padding: 3px 500px; /* Espacio dentro del menú para que no quede pegado al borde */
     display: inline-block; /* El menú se ajusta automáticamente al tamaño de su contenido */
@@ -25,40 +27,40 @@ width: 83.7%;
     top: -8px; /*menú hacia arriba */
     margin-left: 250px; /* Lo mueve un poquito hacia la derecha */
     z-index: 1;
-}
+  }
 
-/* Estilo de la lista dentro del menú */
-.menu ul {
+  /* Estilo de la lista dentro del menú */
+  .menu ul {
     list-style: none; /* Quita los puntos de la lista para que se vea más ordenado */
     margin: 0; /* Quita el espacio entre los elementos de la lista */
     padding: 0; /* Quita el espacio dentro de los elementos de la lista */
     display: flex; /* Organiza los elementos de la lista uno al lado del otro */
-}
+  }
 
-/* Estilo de cada ítem de la lista del menú */
-.menu ul li {
+  /* Estilo de cada ítem de la lista del menú */
+  .menu ul li {
     position: relative; /* La posición de cada ítem se ajusta respecto a su contenedor */
     left: 20px;
-}
+  }
 
-/* Estilo de los enlaces dentro de cada ítem del menú */
-.menu ul li a {
+  /* Estilo de los enlaces dentro de cada ítem del menú */
+  .menu ul li a {
     display: block; /* Hace que los enlaces ocupen todo el espacio disponible del ítem */
     padding: 15px 20px; /* Espacio dentro del enlace para que se vea más grande y fácil de hacer clic */
     color: white; /* Color del texto del enlace es blanco */
     text-decoration: none; /* Quita el subrayado del enlace */
     transition: background-color 0.3s; /* El color de fondo cambia suavemente cuando pasas el mouse sobre el enlace */
     z-index: 1000;
-}
+  }
 
-/* Cambio de color de fondo cuando pasas el mouse sobre el enlace */
-.menu ul li a:hover {
+  /* Cambio de color de fondo cuando pasas el mouse sobre el enlace */
+  .menu ul li a:hover {
     background-color: #363434; /* Cambia el color de fondo del enlace a gris oscuro cuando pasas el mouse */
     z-index: 1000;
-}
+  }
 
-/* Estilo del menú desplegable */
-.menu ul li ul.submenu {
+  /* Estilo del menú desplegable */
+  .menu ul li ul.submenu {
     position: fixed;
     display: none; /* Al principio, los submenús no se ven */
     width: 90px;
@@ -68,46 +70,45 @@ width: 83.7%;
     background-color: #333333; /* Fondo del submenú es gris oscuro */
     border-radius: 0 0 5px 5px; /* Borde redondeado en la parte inferior */
     text-align: center;
-    padding-left: 10px;/**derecha*/
-   padding-right:40px;/**izquierda*/
-   z-index: 999;
-    
-}
+    padding-left: 10px; /**derecha*/
+    padding-right: 40px; /**izquierda*/
+    z-index: 999;
+  }
 
-/* Estilo de cada ítem dentro del submenú */
-.menu ul li ul.submenu li {
+  /* Estilo de cada ítem dentro del submenú */
+  .menu ul li ul.submenu li {
     display: block; /* Cada ítem del submenú aparece en una línea nueva */
     z-index: 1000;
-}
-.menu ul li:hover ul.submenu {
+  }
+  .menu ul li:hover ul.submenu {
     display: block; /* El submenú aparece cuando pasas el mouse sobre el ítem del menú */
     z-index: 999;
-}
+  }
 
-/* Estilo de los enlaces dentro del submenú */
-.menu ul li ul.submenu li a {
+  /* Estilo de los enlaces dentro del submenú */
+  .menu ul li ul.submenu li a {
     padding: 10px 30px; /* Espacio dentro del enlace del submenú */
     text-align: center;
     padding-left: 0px;
     display: block;
     z-index: 1000;
-}
+  }
 
-/* Cambio de color de fondo cuando pasas el mouse sobre el enlace del submenú */
-.menu ul li ul.submenu li a:hover {
+  /* Cambio de color de fondo cuando pasas el mouse sobre el enlace del submenú */
+  .menu ul li ul.submenu li a:hover {
     position: relative;
     background-color: #363434; /* Cambia el color de fondo del enlace a gris oscuro cuando pasas el mouse */
-   transform: translateX(-19px);
-   text-align: center;
-   padding-left: 10px;/**derecha*/
-   padding-right:20px;/**izquierda*/
-   z-index: 1000;
-}
+    transform: translateX(-19px);
+    text-align: center;
+    padding-left: 10px; /**derecha*/
+    padding-right: 20px; /**izquierda*/
+    z-index: 1000;
+  }
 
-/**---------------------------------------------------------------------------------------------------------------------*/
-.welcome {
-padding: 0 auto;
-margin: 0 auto;
+  /**---------------------------------------------------------------------------------------------------------------------*/
+  .welcome {
+    padding: 0 auto;
+    margin: 0 auto;
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -117,278 +118,4737 @@ margin: 0 auto;
     position: relative;
     left: 10%;
     transform: translateY(-50px);
-   
- 
-}
+  }
 
-.Logo-Transxana img{
+  .Logo-Transxana img {
     width: 300px;
     height: auto;
     position: relative;
     left: 540px;
     transform: translateY(20px);
-}
+  }
 
-
-
-
-/**----------------------------------------------CONTENEDOR-------------------------------------------------------------------*/
-.contenedor{
+  /**----------------------------------------------CONTENEDOR-------------------------------------------------------------------*/
+  .contenedor {
     padding: 10px;
     margin: 1px;
     width: 118%;
-}
-.tarjetas{
+  }
+  .tarjetas {
     display: grid;
-    grid-template-rows: 300px 300px ;
-    background-color:#039cd8;
+    grid-template-rows: 300px 300px;
+    background-color: #039cd8;
     border-radius: 10px;
     padding: 0px;
     text-align: center;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     gap: 10px;
-   
-    
-}
-/**------------------------------------------------CONTENIDO PROYECTOS--------------------------------------------------------*/
-.contenedor-proyectos {
-    gap:20px ; /* Espacio entre filas y columnas */
+  }
+  /**------------------------------------------------CONTENIDO PROYECTOS--------------------------------------------------------*/
+  .contenedor-proyectos {
     display: grid; /* Usamos flex para centrar el contenido */
+    grid-template-columns: 351%;
+    gap: 20px; /* Espacio entre filas y columnas */
     margin: 0 auto;
-   transform: translateY(-280.1%);
-   height: 80px;
-   position: relative;
+    transform: translateY(-280.1%);
+    height: 80px;
+    position: relative;
     margin-left: 3.1%;
     width: 26.7%;
-   
-}
-.tarjetas-proyectos {
+  }
+  .tarjetas-proyectos {
     background-color: #fffcfc;
     border-radius: 10px;
     padding: 20px;
     text-align: center;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra del contenedor */
     transition: transform 0.3s ease;
-    height:449px;
-}
+    height: 449px;
+  }
 
-
-.p-contenido{
+  .p-contenido {
     font-size: 22px;
     text-align: start;
-}
+  }
 
-/**--------------------------------------------------------------------------------------------------------------------*/
+  /**--------------------------------------------------------------------------------------------------------------------*/
 
-
-/*----------------------------------------------- Pie de página *---------------------------------------------------------*/
-footer {
-   
-    background-color: #0b79d3; 
+  /*----------------------------------------------- Pie de página *---------------------------------------------------------*/
+  footer {
+    background-color: #0b79d3;
     color: #000000; /* Texto*/
-    text-align: center; 
+    text-align: center;
     position: relative;
     left: -50px;
     padding: 20px 0; /* Espacio interno dentro del pie de página */
-    width: 125.0%; /* Añadido para mantener consistencia */
+    width: 125%; /* Añadido para mantener consistencia */
     transform: translateY(48px);
-}
+  }
 
-a {
+  a {
     text-decoration: none;
-}
+  }
 
-.copyright{
-
+  .copyright {
     color: white;
-}
+  }
 
-.copyright:hover {
+  .copyright:hover {
     text-decoration: none;
     font-size: 20px;
     color: #9708f7 !important;
     transition: color 0.2s;
-    
-    }
+  }
 
-footer .social-media a {
+  footer .social-media a {
     color: #007bff; /* texto */
     margin: 0 10px; /* Espacio alrededor de cada enlace */
     text-decoration: none; /* Quita el subrayado de los enlaces */
+  }
 
-}
-
-.social-media {
+  .social-media {
     text-align: center; /* Centra los enlaces horizontalmente */
     margin-top: 20px; /* Margen superior */
-}
+  }
 
-.social-link.youtube:hover {
+  .social-link.youtube:hover {
     color: #f70035 !important; /* efecto de cambiar de color al pasar el mouse */
     text-decoration: none; /* Quita el subrayado de los enlaces */
     margin-right: 10px; /* Espacio entre los enlaces */
-    font-size: 18px; 
+    font-size: 18px;
     transition: color 0.3s; /* Transición suave para el cambio de color */
-}
-.social-link.facebook:hover {
+  }
+  .social-link.facebook:hover {
     color: #00b7ff !important; /* efecto de cambiar de color al pasar el mouse */
     text-decoration: none; /* Quita el subrayado de los enlaces */
     margin-right: 10px; /* Espacio entre los enlaces */
-    font-size: 18px; 
+    font-size: 18px;
     transition: color 0.3s; /* Transición suave para el cambio de color */
-}
-.social-link.instagram:hover {
+  }
+  .social-link.instagram:hover {
     background: #833ab4;
-    background: linear-gradient(
-      to right,
-      #833ab4,#fd1d1d,#fcb045 );
+    background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
     text-decoration: none; /* Quita el subrayado de los enlaces */
     margin-right: 10px; /* Espacio entre los enlaces */
-    font-size: 18px; 
+    font-size: 18px;
     transition: color 0.3s; /* Transición suave para el cambio de color */
-}
+  }
 
-
-.social-link.facebook {
+  .social-link.facebook {
     color: #ffffff; /* texto */
     text-decoration: none; /* Quita el subrayado de los enlaces */
     margin-right: 10px; /* Espacio entre los enlaces */
-    font-size: 18px; 
+    font-size: 18px;
     transition: color 0.3s; /* Transición suave para el cambio de color */
-}
-.social-link.youtube {
+  }
+  .social-link.youtube {
     color: #ffffff; /* texto */
     text-decoration: none; /* Quita el subrayado de los enlaces */
     margin-right: 10px; /* Espacio entre los enlaces */
-    font-size: 18px; 
+    font-size: 18px;
     transition: color 0.3s; /* Transición suave para el cambio de color */
-}
+  }
 
-.social-link.instagram {
+  .social-link.instagram {
     color: #ffffff; /* Texto */
     text-decoration: none; /* Quita el subrayado de los enlaces */
     margin-right: 10px; /* Espacio entre los enlaces */
-    font-size: 18px; 
+    font-size: 18px;
     transition: color 0.3s; /* Transición suave para el cambio de color */
-}
+  }
 
-.social-link.linkedin {
+  .social-link.linkedin {
     color: #ffffff; /* Color de LinkedIn */
     text-decoration: none; /* Quita el subrayado de los enlaces */
     margin-right: 10px; /* Espacio entre los enlaces */
     font-size: 18px; /* Tamaño de fuente */
     transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  /*-----------------------------------------------------------------------------------------------------------------------------*/
 }
-/*-----------------------------------------------------------------------------------------------------------------------------*/
+/* Small devices (landscape phones, 375px and up)📱*/
+@media (max-width: 375px) {
+  html {
+    font-family: Arial, sans-serif; /* Usamos la letra Arial para todo el texto */
+    margin: 0; /* Quitamos el espacio en blanco alrededor de la página */
+    padding: 0; /* No agregamos espacio extra adentro de la página */
+    background-color: #f4f4f4; /* Ponemos el fondo de la página de color gris claro */
+    width: 83.7%;
+  }
+  /**----------------------------------------Menu-------------------------------------------------------------------------*/
 
+  .menu-container {
+    /* Contenedor del menú */
+    width: 87.4%; /* El menú ocupa todo el ancho de la página */
+    display: grid; /* Usamos flex para centrar el contenido */
+    justify-content: center; /* Centramos el contenido horizontalmente */
+    z-index: 1000;
+  }
 
+  .menu {
+    /* Estilo del menú principal */
+    background-color: #0b79d3; /* Color de fondo del menú amarillo */
+    padding: 3px 500px; /* Espacio dentro del menú para que no quede pegado al borde */
+    display: inline-block; /* El menú se ajusta automáticamente al tamaño de su contenido */
+    white-space: nowrap; /* Evita que las palabras se separen en líneas, manteniendo el menú en una sola línea */
+    position: relative; /* La posición del menú se ajusta respecto a su contenedor */
+    top: -8px; /*menú hacia arriba */
+    margin-left: 250px; /* Lo mueve un poquito hacia la derecha */
+    z-index: 1;
+  }
 
-/*-------------------------------------Dispositivos Responsive------------------------------------------------------------*/
+  /* Estilo de la lista dentro del menú */
+  .menu ul {
+    list-style: none; /* Quita los puntos de la lista para que se vea más ordenado */
+    margin: 0; /* Quita el espacio entre los elementos de la lista */
+    padding: 0; /* Quita el espacio dentro de los elementos de la lista */
+    display: flex; /* Organiza los elementos de la lista uno al lado del otro */
+  }
 
-/* desconocido (más de 100px) */
-@media (min-width: 100px) {
-    .contenedor-proyectos {
-        grid-template-columns: 351%;
-        
-       }}  
+  /* Estilo de cada ítem de la lista del menú */
+  .menu ul li {
+    position: relative; /* La posición de cada ítem se ajusta respecto a su contenedor */
+    left: 20px;
+  }
 
-/* desconocido (más de 200px) */
-@media (min-width: 200px) {
-    .contenedor-proyectos {
-        grid-template-columns: 351%;
-        
-       }}  
+  /* Estilo de los enlaces dentro de cada ítem del menú */
+  .menu ul li a {
+    display: block; /* Hace que los enlaces ocupen todo el espacio disponible del ítem */
+    padding: 15px 20px; /* Espacio dentro del enlace para que se vea más grande y fácil de hacer clic */
+    color: white; /* Color del texto del enlace es blanco */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    transition: background-color 0.3s; /* El color de fondo cambia suavemente cuando pasas el mouse sobre el enlace */
+    z-index: 1000;
+  }
 
-/* desconocido (más de 300px) */
-@media (min-width: 300px) {
-    .contenedor-proyectos {
-        grid-template-columns: 351%;
-        
-       }}  
+  /* Cambio de color de fondo cuando pasas el mouse sobre el enlace */
+  .menu ul li a:hover {
+    background-color: #363434; /* Cambia el color de fondo del enlace a gris oscuro cuando pasas el mouse */
+    z-index: 1000;
+  }
 
-/* desconocido (más de 400px) */
-@media (min-width: 400px) {
-    .contenedor-proyectos {
-        grid-template-columns: 351%;
-        
-       }}  
+  /* Estilo del menú desplegable */
+  .menu ul li ul.submenu {
+    position: fixed;
+    display: none; /* Al principio, los submenús no se ven */
+    width: 90px;
+    position: absolute; /* Los submenús se colocan en una posición específica respecto al menú principal */
+    top: 100%; /* Los submenús aparecen debajo del ítem del menú al que pertenecen */
+    left: 0; /* Los submenús aparecen alineados a la izquierda del ítem del menú */
+    background-color: #333333; /* Fondo del submenú es gris oscuro */
+    border-radius: 0 0 5px 5px; /* Borde redondeado en la parte inferior */
+    text-align: center;
+    padding-left: 10px; /**derecha*/
+    padding-right: 40px; /**izquierda*/
+    z-index: 999;
+  }
 
+  /* Estilo de cada ítem dentro del submenú */
+  .menu ul li ul.submenu li {
+    display: block; /* Cada ítem del submenú aparece en una línea nueva */
+    z-index: 1000;
+  }
+  .menu ul li:hover ul.submenu {
+    display: block; /* El submenú aparece cuando pasas el mouse sobre el ítem del menú */
+    z-index: 999;
+  }
 
-@media (max-width: 480px) {
-    .contenedor-proyectos {
-        grid-template-columns: 351%;
-        
-       }}  
+  /* Estilo de los enlaces dentro del submenú */
+  .menu ul li ul.submenu li a {
+    padding: 10px 30px; /* Espacio dentro del enlace del submenú */
+    text-align: center;
+    padding-left: 0px;
+    display: block;
+    z-index: 1000;
+  }
 
+  /* Cambio de color de fondo cuando pasas el mouse sobre el enlace del submenú */
+  .menu ul li ul.submenu li a:hover {
+    position: relative;
+    background-color: #363434; /* Cambia el color de fondo del enlace a gris oscuro cuando pasas el mouse */
+    transform: translateX(-19px);
+    text-align: center;
+    padding-left: 10px; /**derecha*/
+    padding-right: 20px; /**izquierda*/
+    z-index: 1000;
+  }
 
-/* desconocido (más de 500px) */
-@media (min-width: 500px) {
-    .contenedor-proyectos {
-        grid-template-columns: 351%;
-        
-       }}  
+  /**---------------------------------------------------------------------------------------------------------------------*/
+  .welcome {
+    padding: 0 auto;
+    margin: 0 auto;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 200%;
+    color: #cea800;
+    text-align: center;
+    position: relative;
+    left: 10%;
+    transform: translateY(-50px);
+  }
 
-/* desconocido (más de 600px) */
-@media (min-width: 600px) {
-    .contenedor-proyectos {
-        grid-template-columns: 351%;
-        
-       }}  
+  .Logo-Transxana img {
+    width: 300px;
+    height: auto;
+    position: relative;
+    left: 540px;
+    transform: translateY(20px);
+  }
 
+  /**----------------------------------------------CONTENEDOR-------------------------------------------------------------------*/
+  .contenedor {
+    padding: 10px;
+    margin: 1px;
+    width: 118%;
+  }
+  .tarjetas {
+    display: grid;
+    grid-template-rows: 300px 300px;
+    background-color: #039cd8;
+    border-radius: 10px;
+    padding: 0px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 10px;
+  }
+  /**------------------------------------------------CONTENIDO PROYECTOS--------------------------------------------------------*/
+  .contenedor-proyectos {
+    display: grid; /* Usamos flex para centrar el contenido */
+    grid-template-columns: 351%;
+    gap: 20px; /* Espacio entre filas y columnas */
+    margin: 0 auto;
+    transform: translateY(-280.1%);
+    height: 80px;
+    position: relative;
+    margin-left: 3.1%;
+    width: 26.7%;
+  }
+  .tarjetas-proyectos {
+    background-color: #fffcfc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra del contenedor */
+    transition: transform 0.3s ease;
+    height: 449px;
+  }
 
-/* desconocido (más de 700px) */
-@media (min-width: 700px) {
-    .contenedor-proyectos {
-        grid-template-columns: 351%;
-        
-       }}  
+  .p-contenido {
+    font-size: 22px;
+    text-align: start;
+  }
 
-/* desconocido (más de 800px) */
-@media (min-width: 800px) {
-    .contenedor-proyectos {
-        grid-template-columns: 351%;
-        
-       }}  
-        
-/* desconocido (más de 900px) */
-@media (min-width: 900px) {
-    .contenedor-proyectos {
-        grid-template-columns: 351%;
-        
-       }}  
+  /**--------------------------------------------------------------------------------------------------------------------*/
 
-/* desconocido (más de 1000px) ----*/
-@media (min-width: 1000px) {
-    .contenedor-proyectos {
-        grid-template-columns: 351%;
-        
-       }}  
+  /*----------------------------------------------- Pie de página *---------------------------------------------------------*/
+  footer {
+    background-color: #0b79d3;
+    color: #000000; /* Texto*/
+    text-align: center;
+    position: relative;
+    left: -50px;
+    padding: 20px 0; /* Espacio interno dentro del pie de página */
+    width: 125%; /* Añadido para mantener consistencia */
+    transform: translateY(48px);
+  }
 
+  a {
+    text-decoration: none;
+  }
 
-/* Para pantallas medianas (tablets) */
-@media (min-width: 768px) {
-    .contenedor-proyectos {
-        grid-template-columns: 351%;
-        
-       }}  
-           
-/* Para pantallas grandes (laptops y escritorios) */
-@media (min-width: 1025px) {
-    .contenedor-proyectos {
-        grid-template-columns: 351%;
-        
-       }}  
+  .copyright {
+    color: white;
+  }
 
+  .copyright:hover {
+    text-decoration: none;
+    font-size: 20px;
+    color: #9708f7 !important;
+    transition: color 0.2s;
+  }
 
-       /* Media queries para dispositivos más pequeños */
-@media (max-width: 1200px) {
-    .contenedor-proyectos {
-        grid-template-columns: 351%;
-        
-       }}  
+  footer .social-media a {
+    color: #007bff; /* texto */
+    margin: 0 10px; /* Espacio alrededor de cada enlace */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+  }
 
-/*---------------------------------------------------------------------------------------------------------------*/
+  .social-media {
+    text-align: center; /* Centra los enlaces horizontalmente */
+    margin-top: 20px; /* Margen superior */
+  }
 
+  .social-link.youtube:hover {
+    color: #f70035 !important; /* efecto de cambiar de color al pasar el mouse */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  .social-link.facebook:hover {
+    color: #00b7ff !important; /* efecto de cambiar de color al pasar el mouse */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  .social-link.instagram:hover {
+    background: #833ab4;
+    background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
 
+  .social-link.facebook {
+    color: #ffffff; /* texto */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  .social-link.youtube {
+    color: #ffffff; /* texto */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
 
+  .social-link.instagram {
+    color: #ffffff; /* Texto */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
 
+  .social-link.linkedin {
+    color: #ffffff; /* Color de LinkedIn */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px; /* Tamaño de fuente */
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  /*-----------------------------------------------------------------------------------------------------------------------------*/
+}
+/* Móviles pequeños (hasta 480px) */
+@media screen and (max-width: 480px) {
+  /* Estilos para móviles pequeños */
+  html {
+    font-family: Arial, sans-serif; /* Usamos la letra Arial para todo el texto */
+    margin: 0; /* Quitamos el espacio en blanco alrededor de la página */
+    padding: 0; /* No agregamos espacio extra adentro de la página */
+    background-color: #f4f4f4; /* Ponemos el fondo de la página de color gris claro */
+    width: 83.7%;
+  }
+  /**----------------------------------------Menu-------------------------------------------------------------------------*/
+
+  .menu-container {
+    /* Contenedor del menú */
+    width: 87.4%; /* El menú ocupa todo el ancho de la página */
+    display: grid; /* Usamos flex para centrar el contenido */
+    justify-content: center; /* Centramos el contenido horizontalmente */
+    z-index: 1000;
+  }
+
+  .menu {
+    /* Estilo del menú principal */
+    background-color: #0b79d3; /* Color de fondo del menú amarillo */
+    padding: 3px 500px; /* Espacio dentro del menú para que no quede pegado al borde */
+    display: inline-block; /* El menú se ajusta automáticamente al tamaño de su contenido */
+    white-space: nowrap; /* Evita que las palabras se separen en líneas, manteniendo el menú en una sola línea */
+    position: relative; /* La posición del menú se ajusta respecto a su contenedor */
+    top: -8px; /*menú hacia arriba */
+    margin-left: 250px; /* Lo mueve un poquito hacia la derecha */
+    z-index: 1;
+  }
+
+  /* Estilo de la lista dentro del menú */
+  .menu ul {
+    list-style: none; /* Quita los puntos de la lista para que se vea más ordenado */
+    margin: 0; /* Quita el espacio entre los elementos de la lista */
+    padding: 0; /* Quita el espacio dentro de los elementos de la lista */
+    display: flex; /* Organiza los elementos de la lista uno al lado del otro */
+  }
+
+  /* Estilo de cada ítem de la lista del menú */
+  .menu ul li {
+    position: relative; /* La posición de cada ítem se ajusta respecto a su contenedor */
+    left: 20px;
+  }
+
+  /* Estilo de los enlaces dentro de cada ítem del menú */
+  .menu ul li a {
+    display: block; /* Hace que los enlaces ocupen todo el espacio disponible del ítem */
+    padding: 15px 20px; /* Espacio dentro del enlace para que se vea más grande y fácil de hacer clic */
+    color: white; /* Color del texto del enlace es blanco */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    transition: background-color 0.3s; /* El color de fondo cambia suavemente cuando pasas el mouse sobre el enlace */
+    z-index: 1000;
+  }
+
+  /* Cambio de color de fondo cuando pasas el mouse sobre el enlace */
+  .menu ul li a:hover {
+    background-color: #363434; /* Cambia el color de fondo del enlace a gris oscuro cuando pasas el mouse */
+    z-index: 1000;
+  }
+
+  /* Estilo del menú desplegable */
+  .menu ul li ul.submenu {
+    position: fixed;
+    display: none; /* Al principio, los submenús no se ven */
+    width: 90px;
+    position: absolute; /* Los submenús se colocan en una posición específica respecto al menú principal */
+    top: 100%; /* Los submenús aparecen debajo del ítem del menú al que pertenecen */
+    left: 0; /* Los submenús aparecen alineados a la izquierda del ítem del menú */
+    background-color: #333333; /* Fondo del submenú es gris oscuro */
+    border-radius: 0 0 5px 5px; /* Borde redondeado en la parte inferior */
+    text-align: center;
+    padding-left: 10px; /**derecha*/
+    padding-right: 40px; /**izquierda*/
+    z-index: 999;
+  }
+
+  /* Estilo de cada ítem dentro del submenú */
+  .menu ul li ul.submenu li {
+    display: block; /* Cada ítem del submenú aparece en una línea nueva */
+    z-index: 1000;
+  }
+  .menu ul li:hover ul.submenu {
+    display: block; /* El submenú aparece cuando pasas el mouse sobre el ítem del menú */
+    z-index: 999;
+  }
+
+  /* Estilo de los enlaces dentro del submenú */
+  .menu ul li ul.submenu li a {
+    padding: 10px 30px; /* Espacio dentro del enlace del submenú */
+    text-align: center;
+    padding-left: 0px;
+    display: block;
+    z-index: 1000;
+  }
+
+  /* Cambio de color de fondo cuando pasas el mouse sobre el enlace del submenú */
+  .menu ul li ul.submenu li a:hover {
+    position: relative;
+    background-color: #363434; /* Cambia el color de fondo del enlace a gris oscuro cuando pasas el mouse */
+    transform: translateX(-19px);
+    text-align: center;
+    padding-left: 10px; /**derecha*/
+    padding-right: 20px; /**izquierda*/
+    z-index: 1000;
+  }
+
+  /**---------------------------------------------------------------------------------------------------------------------*/
+  .welcome {
+    padding: 0 auto;
+    margin: 0 auto;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 200%;
+    color: #cea800;
+    text-align: center;
+    position: relative;
+    left: 10%;
+    transform: translateY(-50px);
+  }
+
+  .Logo-Transxana img {
+    width: 300px;
+    height: auto;
+    position: relative;
+    left: 540px;
+    transform: translateY(20px);
+  }
+
+  /**----------------------------------------------CONTENEDOR-------------------------------------------------------------------*/
+  .contenedor {
+    padding: 10px;
+    margin: 1px;
+    width: 118%;
+  }
+  .tarjetas {
+    display: grid;
+    grid-template-rows: 300px 300px;
+    background-color: #039cd8;
+    border-radius: 10px;
+    padding: 0px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 10px;
+  }
+  /**------------------------------------------------CONTENIDO PROYECTOS--------------------------------------------------------*/
+  .contenedor-proyectos {
+    display: grid; /* Usamos flex para centrar el contenido */
+    grid-template-columns: 351%;
+    gap: 20px; /* Espacio entre filas y columnas */
+    margin: 0 auto;
+    transform: translateY(-280.1%);
+    height: 80px;
+    position: relative;
+    margin-left: 3.1%;
+    width: 26.7%;
+  }
+  .tarjetas-proyectos {
+    background-color: #fffcfc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra del contenedor */
+    transition: transform 0.3s ease;
+    height: 449px;
+  }
+
+  .p-contenido {
+    font-size: 22px;
+    text-align: start;
+  }
+
+  /**--------------------------------------------------------------------------------------------------------------------*/
+
+  /*----------------------------------------------- Pie de página *---------------------------------------------------------*/
+  footer {
+    background-color: #0b79d3;
+    color: #000000; /* Texto*/
+    text-align: center;
+    position: relative;
+    left: -50px;
+    padding: 20px 0; /* Espacio interno dentro del pie de página */
+    width: 125%; /* Añadido para mantener consistencia */
+    transform: translateY(48px);
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .copyright {
+    color: white;
+  }
+
+  .copyright:hover {
+    text-decoration: none;
+    font-size: 20px;
+    color: #9708f7 !important;
+    transition: color 0.2s;
+  }
+
+  footer .social-media a {
+    color: #007bff; /* texto */
+    margin: 0 10px; /* Espacio alrededor de cada enlace */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+  }
+
+  .social-media {
+    text-align: center; /* Centra los enlaces horizontalmente */
+    margin-top: 20px; /* Margen superior */
+  }
+
+  .social-link.youtube:hover {
+    color: #f70035 !important; /* efecto de cambiar de color al pasar el mouse */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  .social-link.facebook:hover {
+    color: #00b7ff !important; /* efecto de cambiar de color al pasar el mouse */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  .social-link.instagram:hover {
+    background: #833ab4;
+    background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+
+  .social-link.facebook {
+    color: #ffffff; /* texto */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  .social-link.youtube {
+    color: #ffffff; /* texto */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+
+  .social-link.instagram {
+    color: #ffffff; /* Texto */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+
+  .social-link.linkedin {
+    color: #ffffff; /* Color de LinkedIn */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px; /* Tamaño de fuente */
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  /*-----------------------------------------------------------------------------------------------------------------------------*/
+}
+
+/* Móviles medianos (481px a 425px, incluye phablets) */
+@media screen and (min-width: 481px) and (max-width: 425px) {
+  /* Estilos para móviles medianos estándar en Google Chrome */
+  html {
+    font-family: Arial, sans-serif; /* Usamos la letra Arial para todo el texto */
+    margin: 0; /* Quitamos el espacio en blanco alrededor de la página */
+    padding: 0; /* No agregamos espacio extra adentro de la página */
+    background-color: #f4f4f4; /* Ponemos el fondo de la página de color gris claro */
+    width: 83.7%;
+  }
+  /**----------------------------------------Menu-------------------------------------------------------------------------*/
+
+  .menu-container {
+    /* Contenedor del menú */
+    width: 87.4%; /* El menú ocupa todo el ancho de la página */
+    display: grid; /* Usamos flex para centrar el contenido */
+    justify-content: center; /* Centramos el contenido horizontalmente */
+    z-index: 1000;
+  }
+
+  .menu {
+    /* Estilo del menú principal */
+    background-color: #0b79d3; /* Color de fondo del menú amarillo */
+    padding: 3px 500px; /* Espacio dentro del menú para que no quede pegado al borde */
+    display: inline-block; /* El menú se ajusta automáticamente al tamaño de su contenido */
+    white-space: nowrap; /* Evita que las palabras se separen en líneas, manteniendo el menú en una sola línea */
+    position: relative; /* La posición del menú se ajusta respecto a su contenedor */
+    top: -8px; /*menú hacia arriba */
+    margin-left: 250px; /* Lo mueve un poquito hacia la derecha */
+    z-index: 1;
+  }
+
+  /* Estilo de la lista dentro del menú */
+  .menu ul {
+    list-style: none; /* Quita los puntos de la lista para que se vea más ordenado */
+    margin: 0; /* Quita el espacio entre los elementos de la lista */
+    padding: 0; /* Quita el espacio dentro de los elementos de la lista */
+    display: flex; /* Organiza los elementos de la lista uno al lado del otro */
+  }
+
+  /* Estilo de cada ítem de la lista del menú */
+  .menu ul li {
+    position: relative; /* La posición de cada ítem se ajusta respecto a su contenedor */
+    left: 20px;
+  }
+
+  /* Estilo de los enlaces dentro de cada ítem del menú */
+  .menu ul li a {
+    display: block; /* Hace que los enlaces ocupen todo el espacio disponible del ítem */
+    padding: 15px 20px; /* Espacio dentro del enlace para que se vea más grande y fácil de hacer clic */
+    color: white; /* Color del texto del enlace es blanco */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    transition: background-color 0.3s; /* El color de fondo cambia suavemente cuando pasas el mouse sobre el enlace */
+    z-index: 1000;
+  }
+
+  /* Cambio de color de fondo cuando pasas el mouse sobre el enlace */
+  .menu ul li a:hover {
+    background-color: #363434; /* Cambia el color de fondo del enlace a gris oscuro cuando pasas el mouse */
+    z-index: 1000;
+  }
+
+  /* Estilo del menú desplegable */
+  .menu ul li ul.submenu {
+    position: fixed;
+    display: none; /* Al principio, los submenús no se ven */
+    width: 90px;
+    position: absolute; /* Los submenús se colocan en una posición específica respecto al menú principal */
+    top: 100%; /* Los submenús aparecen debajo del ítem del menú al que pertenecen */
+    left: 0; /* Los submenús aparecen alineados a la izquierda del ítem del menú */
+    background-color: #333333; /* Fondo del submenú es gris oscuro */
+    border-radius: 0 0 5px 5px; /* Borde redondeado en la parte inferior */
+    text-align: center;
+    padding-left: 10px; /**derecha*/
+    padding-right: 40px; /**izquierda*/
+    z-index: 999;
+  }
+
+  /* Estilo de cada ítem dentro del submenú */
+  .menu ul li ul.submenu li {
+    display: block; /* Cada ítem del submenú aparece en una línea nueva */
+    z-index: 1000;
+  }
+  .menu ul li:hover ul.submenu {
+    display: block; /* El submenú aparece cuando pasas el mouse sobre el ítem del menú */
+    z-index: 999;
+  }
+
+  /* Estilo de los enlaces dentro del submenú */
+  .menu ul li ul.submenu li a {
+    padding: 10px 30px; /* Espacio dentro del enlace del submenú */
+    text-align: center;
+    padding-left: 0px;
+    display: block;
+    z-index: 1000;
+  }
+
+  /* Cambio de color de fondo cuando pasas el mouse sobre el enlace del submenú */
+  .menu ul li ul.submenu li a:hover {
+    position: relative;
+    background-color: #363434; /* Cambia el color de fondo del enlace a gris oscuro cuando pasas el mouse */
+    transform: translateX(-19px);
+    text-align: center;
+    padding-left: 10px; /**derecha*/
+    padding-right: 20px; /**izquierda*/
+    z-index: 1000;
+  }
+
+  /**---------------------------------------------------------------------------------------------------------------------*/
+  .welcome {
+    padding: 0 auto;
+    margin: 0 auto;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 200%;
+    color: #cea800;
+    text-align: center;
+    position: relative;
+    left: 10%;
+    transform: translateY(-50px);
+  }
+
+  .Logo-Transxana img {
+    width: 300px;
+    height: auto;
+    position: relative;
+    left: 540px;
+    transform: translateY(20px);
+  }
+
+  /**----------------------------------------------CONTENEDOR-------------------------------------------------------------------*/
+  .contenedor {
+    padding: 10px;
+    margin: 1px;
+    width: 118%;
+  }
+  .tarjetas {
+    display: grid;
+    grid-template-rows: 300px 300px;
+    background-color: #039cd8;
+    border-radius: 10px;
+    padding: 0px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 10px;
+  }
+  /**------------------------------------------------CONTENIDO PROYECTOS--------------------------------------------------------*/
+  .contenedor-proyectos {
+    display: grid; /* Usamos flex para centrar el contenido */
+    grid-template-columns: 351%;
+    gap: 20px; /* Espacio entre filas y columnas */
+    margin: 0 auto;
+    transform: translateY(-280.1%);
+    height: 80px;
+    position: relative;
+    margin-left: 3.1%;
+    width: 26.7%;
+  }
+  .tarjetas-proyectos {
+    background-color: #fffcfc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra del contenedor */
+    transition: transform 0.3s ease;
+    height: 449px;
+  }
+
+  .p-contenido {
+    font-size: 22px;
+    text-align: start;
+  }
+
+  /**--------------------------------------------------------------------------------------------------------------------*/
+
+  /*----------------------------------------------- Pie de página *---------------------------------------------------------*/
+  footer {
+    background-color: #0b79d3;
+    color: #000000; /* Texto*/
+    text-align: center;
+    position: relative;
+    left: -50px;
+    padding: 20px 0; /* Espacio interno dentro del pie de página */
+    width: 125%; /* Añadido para mantener consistencia */
+    transform: translateY(48px);
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .copyright {
+    color: white;
+  }
+
+  .copyright:hover {
+    text-decoration: none;
+    font-size: 20px;
+    color: #9708f7 !important;
+    transition: color 0.2s;
+  }
+
+  footer .social-media a {
+    color: #007bff; /* texto */
+    margin: 0 10px; /* Espacio alrededor de cada enlace */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+  }
+
+  .social-media {
+    text-align: center; /* Centra los enlaces horizontalmente */
+    margin-top: 20px; /* Margen superior */
+  }
+
+  .social-link.youtube:hover {
+    color: #f70035 !important; /* efecto de cambiar de color al pasar el mouse */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  .social-link.facebook:hover {
+    color: #00b7ff !important; /* efecto de cambiar de color al pasar el mouse */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  .social-link.instagram:hover {
+    background: #833ab4;
+    background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+
+  .social-link.facebook {
+    color: #ffffff; /* texto */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  .social-link.youtube {
+    color: #ffffff; /* texto */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+
+  .social-link.instagram {
+    color: #ffffff; /* Texto */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+
+  .social-link.linkedin {
+    color: #ffffff; /* Color de LinkedIn */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px; /* Tamaño de fuente */
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  /*-----------------------------------------------------------------------------------------------------------------------------*/
+}
+
+/* Dispositivos pequeños adicionales (425px a 767px) */
+@media screen and (min-width: 426px) and (max-width: 767px) {
+  /* Estilos para phablets y móviles grandes */
+  html {
+    font-family: Arial, sans-serif; /* Usamos la letra Arial para todo el texto */
+    margin: 0; /* Quitamos el espacio en blanco alrededor de la página */
+    padding: 0; /* No agregamos espacio extra adentro de la página */
+    background-color: #f4f4f4; /* Ponemos el fondo de la página de color gris claro */
+    width: 83.7%;
+  }
+  /**----------------------------------------Menu-------------------------------------------------------------------------*/
+
+  .menu-container {
+    /* Contenedor del menú */
+    width: 87.4%; /* El menú ocupa todo el ancho de la página */
+    display: grid; /* Usamos flex para centrar el contenido */
+    justify-content: center; /* Centramos el contenido horizontalmente */
+    z-index: 1000;
+  }
+
+  .menu {
+    /* Estilo del menú principal */
+    background-color: #0b79d3; /* Color de fondo del menú amarillo */
+    padding: 3px 500px; /* Espacio dentro del menú para que no quede pegado al borde */
+    display: inline-block; /* El menú se ajusta automáticamente al tamaño de su contenido */
+    white-space: nowrap; /* Evita que las palabras se separen en líneas, manteniendo el menú en una sola línea */
+    position: relative; /* La posición del menú se ajusta respecto a su contenedor */
+    top: -8px; /*menú hacia arriba */
+    margin-left: 250px; /* Lo mueve un poquito hacia la derecha */
+    z-index: 1;
+  }
+
+  /* Estilo de la lista dentro del menú */
+  .menu ul {
+    list-style: none; /* Quita los puntos de la lista para que se vea más ordenado */
+    margin: 0; /* Quita el espacio entre los elementos de la lista */
+    padding: 0; /* Quita el espacio dentro de los elementos de la lista */
+    display: flex; /* Organiza los elementos de la lista uno al lado del otro */
+  }
+
+  /* Estilo de cada ítem de la lista del menú */
+  .menu ul li {
+    position: relative; /* La posición de cada ítem se ajusta respecto a su contenedor */
+    left: 20px;
+  }
+
+  /* Estilo de los enlaces dentro de cada ítem del menú */
+  .menu ul li a {
+    display: block; /* Hace que los enlaces ocupen todo el espacio disponible del ítem */
+    padding: 15px 20px; /* Espacio dentro del enlace para que se vea más grande y fácil de hacer clic */
+    color: white; /* Color del texto del enlace es blanco */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    transition: background-color 0.3s; /* El color de fondo cambia suavemente cuando pasas el mouse sobre el enlace */
+    z-index: 1000;
+  }
+
+  /* Cambio de color de fondo cuando pasas el mouse sobre el enlace */
+  .menu ul li a:hover {
+    background-color: #363434; /* Cambia el color de fondo del enlace a gris oscuro cuando pasas el mouse */
+    z-index: 1000;
+  }
+
+  /* Estilo del menú desplegable */
+  .menu ul li ul.submenu {
+    position: fixed;
+    display: none; /* Al principio, los submenús no se ven */
+    width: 90px;
+    position: absolute; /* Los submenús se colocan en una posición específica respecto al menú principal */
+    top: 100%; /* Los submenús aparecen debajo del ítem del menú al que pertenecen */
+    left: 0; /* Los submenús aparecen alineados a la izquierda del ítem del menú */
+    background-color: #333333; /* Fondo del submenú es gris oscuro */
+    border-radius: 0 0 5px 5px; /* Borde redondeado en la parte inferior */
+    text-align: center;
+    padding-left: 10px; /**derecha*/
+    padding-right: 40px; /**izquierda*/
+    z-index: 999;
+  }
+
+  /* Estilo de cada ítem dentro del submenú */
+  .menu ul li ul.submenu li {
+    display: block; /* Cada ítem del submenú aparece en una línea nueva */
+    z-index: 1000;
+  }
+  .menu ul li:hover ul.submenu {
+    display: block; /* El submenú aparece cuando pasas el mouse sobre el ítem del menú */
+    z-index: 999;
+  }
+
+  /* Estilo de los enlaces dentro del submenú */
+  .menu ul li ul.submenu li a {
+    padding: 10px 30px; /* Espacio dentro del enlace del submenú */
+    text-align: center;
+    padding-left: 0px;
+    display: block;
+    z-index: 1000;
+  }
+
+  /* Cambio de color de fondo cuando pasas el mouse sobre el enlace del submenú */
+  .menu ul li ul.submenu li a:hover {
+    position: relative;
+    background-color: #363434; /* Cambia el color de fondo del enlace a gris oscuro cuando pasas el mouse */
+    transform: translateX(-19px);
+    text-align: center;
+    padding-left: 10px; /**derecha*/
+    padding-right: 20px; /**izquierda*/
+    z-index: 1000;
+  }
+
+  /**---------------------------------------------------------------------------------------------------------------------*/
+  .welcome {
+    padding: 0 auto;
+    margin: 0 auto;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 200%;
+    color: #cea800;
+    text-align: center;
+    position: relative;
+    left: 10%;
+    transform: translateY(-50px);
+  }
+
+  .Logo-Transxana img {
+    width: 300px;
+    height: auto;
+    position: relative;
+    left: 540px;
+    transform: translateY(20px);
+  }
+
+  /**----------------------------------------------CONTENEDOR-------------------------------------------------------------------*/
+  .contenedor {
+    padding: 10px;
+    margin: 1px;
+    width: 118%;
+  }
+  .tarjetas {
+    display: grid;
+    grid-template-rows: 300px 300px;
+    background-color: #039cd8;
+    border-radius: 10px;
+    padding: 0px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 10px;
+  }
+  /**------------------------------------------------CONTENIDO PROYECTOS--------------------------------------------------------*/
+  .contenedor-proyectos {
+    display: grid; /* Usamos flex para centrar el contenido */
+    grid-template-columns: 351%;
+    gap: 20px; /* Espacio entre filas y columnas */
+    margin: 0 auto;
+    transform: translateY(-280.1%);
+    height: 80px;
+    position: relative;
+    margin-left: 3.1%;
+    width: 26.7%;
+  }
+  .tarjetas-proyectos {
+    background-color: #fffcfc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra del contenedor */
+    transition: transform 0.3s ease;
+    height: 449px;
+  }
+
+  .p-contenido {
+    font-size: 22px;
+    text-align: start;
+  }
+
+  /**--------------------------------------------------------------------------------------------------------------------*/
+
+  /*----------------------------------------------- Pie de página *---------------------------------------------------------*/
+  footer {
+    background-color: #0b79d3;
+    color: #000000; /* Texto*/
+    text-align: center;
+    position: relative;
+    left: -50px;
+    padding: 20px 0; /* Espacio interno dentro del pie de página */
+    width: 125%; /* Añadido para mantener consistencia */
+    transform: translateY(48px);
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .copyright {
+    color: white;
+  }
+
+  .copyright:hover {
+    text-decoration: none;
+    font-size: 20px;
+    color: #9708f7 !important;
+    transition: color 0.2s;
+  }
+
+  footer .social-media a {
+    color: #007bff; /* texto */
+    margin: 0 10px; /* Espacio alrededor de cada enlace */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+  }
+
+  .social-media {
+    text-align: center; /* Centra los enlaces horizontalmente */
+    margin-top: 20px; /* Margen superior */
+  }
+
+  .social-link.youtube:hover {
+    color: #f70035 !important; /* efecto de cambiar de color al pasar el mouse */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  .social-link.facebook:hover {
+    color: #00b7ff !important; /* efecto de cambiar de color al pasar el mouse */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  .social-link.instagram:hover {
+    background: #833ab4;
+    background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+
+  .social-link.facebook {
+    color: #ffffff; /* texto */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  .social-link.youtube {
+    color: #ffffff; /* texto */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+
+  .social-link.instagram {
+    color: #ffffff; /* Texto */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+
+  .social-link.linkedin {
+    color: #ffffff; /* Color de LinkedIn */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px; /* Tamaño de fuente */
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  /*-----------------------------------------------------------------------------------------------------------------------------*/
+}
+
+/* Tabletas pequeñas y verticales (768px a 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Estilos para tabletas pequeñas en modo vertical */
+  html {
+    font-family: Arial, sans-serif; /* Usamos la letra Arial para todo el texto */
+    margin: 0; /* Quitamos el espacio en blanco alrededor de la página */
+    padding: 0; /* No agregamos espacio extra adentro de la página */
+    background-color: #f4f4f4; /* Ponemos el fondo de la página de color gris claro */
+    width: 83.7%;
+  }
+  /**----------------------------------------Menu-------------------------------------------------------------------------*/
+
+  .menu-container {
+    /* Contenedor del menú */
+    width: 87.4%; /* El menú ocupa todo el ancho de la página */
+    display: grid; /* Usamos flex para centrar el contenido */
+    justify-content: center; /* Centramos el contenido horizontalmente */
+    z-index: 1000;
+  }
+
+  .menu {
+    /* Estilo del menú principal */
+    background-color: #0b79d3; /* Color de fondo del menú amarillo */
+    padding: 3px 500px; /* Espacio dentro del menú para que no quede pegado al borde */
+    display: inline-block; /* El menú se ajusta automáticamente al tamaño de su contenido */
+    white-space: nowrap; /* Evita que las palabras se separen en líneas, manteniendo el menú en una sola línea */
+    position: relative; /* La posición del menú se ajusta respecto a su contenedor */
+    top: -8px; /*menú hacia arriba */
+    margin-left: 250px; /* Lo mueve un poquito hacia la derecha */
+    z-index: 1;
+  }
+
+  /* Estilo de la lista dentro del menú */
+  .menu ul {
+    list-style: none; /* Quita los puntos de la lista para que se vea más ordenado */
+    margin: 0; /* Quita el espacio entre los elementos de la lista */
+    padding: 0; /* Quita el espacio dentro de los elementos de la lista */
+    display: flex; /* Organiza los elementos de la lista uno al lado del otro */
+  }
+
+  /* Estilo de cada ítem de la lista del menú */
+  .menu ul li {
+    position: relative; /* La posición de cada ítem se ajusta respecto a su contenedor */
+    left: 20px;
+  }
+
+  /* Estilo de los enlaces dentro de cada ítem del menú */
+  .menu ul li a {
+    display: block; /* Hace que los enlaces ocupen todo el espacio disponible del ítem */
+    padding: 15px 20px; /* Espacio dentro del enlace para que se vea más grande y fácil de hacer clic */
+    color: white; /* Color del texto del enlace es blanco */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    transition: background-color 0.3s; /* El color de fondo cambia suavemente cuando pasas el mouse sobre el enlace */
+    z-index: 1000;
+  }
+
+  /* Cambio de color de fondo cuando pasas el mouse sobre el enlace */
+  .menu ul li a:hover {
+    background-color: #363434; /* Cambia el color de fondo del enlace a gris oscuro cuando pasas el mouse */
+    z-index: 1000;
+  }
+
+  /* Estilo del menú desplegable */
+  .menu ul li ul.submenu {
+    position: fixed;
+    display: none; /* Al principio, los submenús no se ven */
+    width: 90px;
+    position: absolute; /* Los submenús se colocan en una posición específica respecto al menú principal */
+    top: 100%; /* Los submenús aparecen debajo del ítem del menú al que pertenecen */
+    left: 0; /* Los submenús aparecen alineados a la izquierda del ítem del menú */
+    background-color: #333333; /* Fondo del submenú es gris oscuro */
+    border-radius: 0 0 5px 5px; /* Borde redondeado en la parte inferior */
+    text-align: center;
+    padding-left: 10px; /**derecha*/
+    padding-right: 40px; /**izquierda*/
+    z-index: 999;
+  }
+
+  /* Estilo de cada ítem dentro del submenú */
+  .menu ul li ul.submenu li {
+    display: block; /* Cada ítem del submenú aparece en una línea nueva */
+    z-index: 1000;
+  }
+  .menu ul li:hover ul.submenu {
+    display: block; /* El submenú aparece cuando pasas el mouse sobre el ítem del menú */
+    z-index: 999;
+  }
+
+  /* Estilo de los enlaces dentro del submenú */
+  .menu ul li ul.submenu li a {
+    padding: 10px 30px; /* Espacio dentro del enlace del submenú */
+    text-align: center;
+    padding-left: 0px;
+    display: block;
+    z-index: 1000;
+  }
+
+  /* Cambio de color de fondo cuando pasas el mouse sobre el enlace del submenú */
+  .menu ul li ul.submenu li a:hover {
+    position: relative;
+    background-color: #363434; /* Cambia el color de fondo del enlace a gris oscuro cuando pasas el mouse */
+    transform: translateX(-19px);
+    text-align: center;
+    padding-left: 10px; /**derecha*/
+    padding-right: 20px; /**izquierda*/
+    z-index: 1000;
+  }
+
+  /**---------------------------------------------------------------------------------------------------------------------*/
+  .welcome {
+    padding: 0 auto;
+    margin: 0 auto;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 200%;
+    color: #cea800;
+    text-align: center;
+    position: relative;
+    left: 10%;
+    transform: translateY(-50px);
+  }
+
+  .Logo-Transxana img {
+    width: 300px;
+    height: auto;
+    position: relative;
+    left: 540px;
+    transform: translateY(20px);
+  }
+
+  /**----------------------------------------------CONTENEDOR-------------------------------------------------------------------*/
+  .contenedor {
+    padding: 10px;
+    margin: 1px;
+    width: 118%;
+  }
+  .tarjetas {
+    display: grid;
+    grid-template-rows: 300px 300px;
+    background-color: #039cd8;
+    border-radius: 10px;
+    padding: 0px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 10px;
+  }
+  /**------------------------------------------------CONTENIDO PROYECTOS--------------------------------------------------------*/
+  .contenedor-proyectos {
+    display: grid; /* Usamos flex para centrar el contenido */
+    grid-template-columns: 351%;
+    gap: 20px; /* Espacio entre filas y columnas */
+    margin: 0 auto;
+    transform: translateY(-280.1%);
+    height: 80px;
+    position: relative;
+    margin-left: 3.1%;
+    width: 26.7%;
+  }
+  .tarjetas-proyectos {
+    background-color: #fffcfc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra del contenedor */
+    transition: transform 0.3s ease;
+    height: 449px;
+  }
+
+  .p-contenido {
+    font-size: 22px;
+    text-align: start;
+  }
+
+  /**--------------------------------------------------------------------------------------------------------------------*/
+
+  /*----------------------------------------------- Pie de página *---------------------------------------------------------*/
+  footer {
+    background-color: #0b79d3;
+    color: #000000; /* Texto*/
+    text-align: center;
+    position: relative;
+    left: -50px;
+    padding: 20px 0; /* Espacio interno dentro del pie de página */
+    width: 125%; /* Añadido para mantener consistencia */
+    transform: translateY(48px);
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .copyright {
+    color: white;
+  }
+
+  .copyright:hover {
+    text-decoration: none;
+    font-size: 20px;
+    color: #9708f7 !important;
+    transition: color 0.2s;
+  }
+
+  footer .social-media a {
+    color: #007bff; /* texto */
+    margin: 0 10px; /* Espacio alrededor de cada enlace */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+  }
+
+  .social-media {
+    text-align: center; /* Centra los enlaces horizontalmente */
+    margin-top: 20px; /* Margen superior */
+  }
+
+  .social-link.youtube:hover {
+    color: #f70035 !important; /* efecto de cambiar de color al pasar el mouse */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  .social-link.facebook:hover {
+    color: #00b7ff !important; /* efecto de cambiar de color al pasar el mouse */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  .social-link.instagram:hover {
+    background: #833ab4;
+    background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+
+  .social-link.facebook {
+    color: #ffffff; /* texto */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  .social-link.youtube {
+    color: #ffffff; /* texto */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+
+  .social-link.instagram {
+    color: #ffffff; /* Texto */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+
+  .social-link.linkedin {
+    color: #ffffff; /* Color de LinkedIn */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px; /* Tamaño de fuente */
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  /*-----------------------------------------------------------------------------------------------------------------------------*/
+}
+
+/* Tabletas grandes y horizontales (1025px) */
+@media screen and (min-width: 1025px) {
+  /* Estilos para tabletas grandes en modo horizontal */
+  html {
+    font-family: Arial, sans-serif; /* Usamos la letra Arial para todo el texto */
+    margin: 0; /* Quitamos el espacio en blanco alrededor de la página */
+    padding: 0; /* No agregamos espacio extra adentro de la página */
+    background-color: #f4f4f4; /* Ponemos el fondo de la página de color gris claro */
+    width: 83.7%;
+  }
+  /**----------------------------------------Menu-------------------------------------------------------------------------*/
+
+  .menu-container {
+    /* Contenedor del menú */
+    width: 87.4%; /* El menú ocupa todo el ancho de la página */
+    display: grid; /* Usamos flex para centrar el contenido */
+    justify-content: center; /* Centramos el contenido horizontalmente */
+    z-index: 1000;
+  }
+
+  .menu {
+    /* Estilo del menú principal */
+    background-color: #0b79d3; /* Color de fondo del menú amarillo */
+    padding: 3px 500px; /* Espacio dentro del menú para que no quede pegado al borde */
+    display: inline-block; /* El menú se ajusta automáticamente al tamaño de su contenido */
+    white-space: nowrap; /* Evita que las palabras se separen en líneas, manteniendo el menú en una sola línea */
+    position: relative; /* La posición del menú se ajusta respecto a su contenedor */
+    top: -8px; /*menú hacia arriba */
+    margin-left: 250px; /* Lo mueve un poquito hacia la derecha */
+    z-index: 1;
+  }
+
+  /* Estilo de la lista dentro del menú */
+  .menu ul {
+    list-style: none; /* Quita los puntos de la lista para que se vea más ordenado */
+    margin: 0; /* Quita el espacio entre los elementos de la lista */
+    padding: 0; /* Quita el espacio dentro de los elementos de la lista */
+    display: flex; /* Organiza los elementos de la lista uno al lado del otro */
+  }
+
+  /* Estilo de cada ítem de la lista del menú */
+  .menu ul li {
+    position: relative; /* La posición de cada ítem se ajusta respecto a su contenedor */
+    left: 20px;
+  }
+
+  /* Estilo de los enlaces dentro de cada ítem del menú */
+  .menu ul li a {
+    display: block; /* Hace que los enlaces ocupen todo el espacio disponible del ítem */
+    padding: 15px 20px; /* Espacio dentro del enlace para que se vea más grande y fácil de hacer clic */
+    color: white; /* Color del texto del enlace es blanco */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    transition: background-color 0.3s; /* El color de fondo cambia suavemente cuando pasas el mouse sobre el enlace */
+    z-index: 1000;
+  }
+
+  /* Cambio de color de fondo cuando pasas el mouse sobre el enlace */
+  .menu ul li a:hover {
+    background-color: #363434; /* Cambia el color de fondo del enlace a gris oscuro cuando pasas el mouse */
+    z-index: 1000;
+  }
+
+  /* Estilo del menú desplegable */
+  .menu ul li ul.submenu {
+    position: fixed;
+    display: none; /* Al principio, los submenús no se ven */
+    width: 90px;
+    position: absolute; /* Los submenús se colocan en una posición específica respecto al menú principal */
+    top: 100%; /* Los submenús aparecen debajo del ítem del menú al que pertenecen */
+    left: 0; /* Los submenús aparecen alineados a la izquierda del ítem del menú */
+    background-color: #333333; /* Fondo del submenú es gris oscuro */
+    border-radius: 0 0 5px 5px; /* Borde redondeado en la parte inferior */
+    text-align: center;
+    padding-left: 10px; /**derecha*/
+    padding-right: 40px; /**izquierda*/
+    z-index: 999;
+  }
+
+  /* Estilo de cada ítem dentro del submenú */
+  .menu ul li ul.submenu li {
+    display: block; /* Cada ítem del submenú aparece en una línea nueva */
+    z-index: 1000;
+  }
+  .menu ul li:hover ul.submenu {
+    display: block; /* El submenú aparece cuando pasas el mouse sobre el ítem del menú */
+    z-index: 999;
+  }
+
+  /* Estilo de los enlaces dentro del submenú */
+  .menu ul li ul.submenu li a {
+    padding: 10px 30px; /* Espacio dentro del enlace del submenú */
+    text-align: center;
+    padding-left: 0px;
+    display: block;
+    z-index: 1000;
+  }
+
+  /* Cambio de color de fondo cuando pasas el mouse sobre el enlace del submenú */
+  .menu ul li ul.submenu li a:hover {
+    position: relative;
+    background-color: #363434; /* Cambia el color de fondo del enlace a gris oscuro cuando pasas el mouse */
+    transform: translateX(-19px);
+    text-align: center;
+    padding-left: 10px; /**derecha*/
+    padding-right: 20px; /**izquierda*/
+    z-index: 1000;
+  }
+
+  /**---------------------------------------------------------------------------------------------------------------------*/
+  .welcome {
+    padding: 0 auto;
+    margin: 0 auto;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 200%;
+    color: #cea800;
+    text-align: center;
+    position: relative;
+    left: 10%;
+    transform: translateY(-50px);
+  }
+
+  .Logo-Transxana img {
+    width: 300px;
+    height: auto;
+    position: relative;
+    left: 540px;
+    transform: translateY(20px);
+  }
+
+  /**----------------------------------------------CONTENEDOR-------------------------------------------------------------------*/
+  .contenedor {
+    padding: 10px;
+    margin: 1px;
+    width: 118%;
+  }
+  .tarjetas {
+    display: grid;
+    grid-template-rows: 300px 300px;
+    background-color: #039cd8;
+    border-radius: 10px;
+    padding: 0px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 10px;
+  }
+  /**------------------------------------------------CONTENIDO PROYECTOS--------------------------------------------------------*/
+  .contenedor-proyectos {
+    display: grid; /* Usamos flex para centrar el contenido */
+    grid-template-columns: 351%;
+    gap: 20px; /* Espacio entre filas y columnas */
+    margin: 0 auto;
+    transform: translateY(-280.1%);
+    height: 80px;
+    position: relative;
+    margin-left: 3.1%;
+    width: 26.7%;
+  }
+  .tarjetas-proyectos {
+    background-color: #fffcfc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra del contenedor */
+    transition: transform 0.3s ease;
+    height: 449px;
+  }
+
+  .p-contenido {
+    font-size: 22px;
+    text-align: start;
+  }
+
+  /**--------------------------------------------------------------------------------------------------------------------*/
+
+  /*----------------------------------------------- Pie de página *---------------------------------------------------------*/
+  footer {
+    background-color: #0b79d3;
+    color: #000000; /* Texto*/
+    text-align: center;
+    position: relative;
+    left: -50px;
+    padding: 20px 0; /* Espacio interno dentro del pie de página */
+    width: 125%; /* Añadido para mantener consistencia */
+    transform: translateY(48px);
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .copyright {
+    color: white;
+  }
+
+  .copyright:hover {
+    text-decoration: none;
+    font-size: 20px;
+    color: #9708f7 !important;
+    transition: color 0.2s;
+  }
+
+  footer .social-media a {
+    color: #007bff; /* texto */
+    margin: 0 10px; /* Espacio alrededor de cada enlace */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+  }
+
+  .social-media {
+    text-align: center; /* Centra los enlaces horizontalmente */
+    margin-top: 20px; /* Margen superior */
+  }
+
+  .social-link.youtube:hover {
+    color: #f70035 !important; /* efecto de cambiar de color al pasar el mouse */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  .social-link.facebook:hover {
+    color: #00b7ff !important; /* efecto de cambiar de color al pasar el mouse */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  .social-link.instagram:hover {
+    background: #833ab4;
+    background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+
+  .social-link.facebook {
+    color: #ffffff; /* texto */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  .social-link.youtube {
+    color: #ffffff; /* texto */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+
+  .social-link.instagram {
+    color: #ffffff; /* Texto */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+
+  .social-link.linkedin {
+    color: #ffffff; /* Color de LinkedIn */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px; /* Tamaño de fuente */
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  /*-----------------------------------------------------------------------------------------------------------------------------*/
+}
+/* Tabletas grandes y horizontales (1366px) */
+@media screen and (max-width: 1366px) {
+  /* Estilos para tabletas grandes en modo horizontal */
+  html {
+    font-family: Arial, sans-serif; /* Usamos la letra Arial para todo el texto */
+    margin: 0; /* Quitamos el espacio en blanco alrededor de la página */
+    padding: 0; /* No agregamos espacio extra adentro de la página */
+    background-color: #f4f4f4; /* Ponemos el fondo de la página de color gris claro */
+    width: 83.7%;
+  }
+  /**----------------------------------------Menu-------------------------------------------------------------------------*/
+
+  .menu-container {
+    /* Contenedor del menú */
+    width: 87.4%; /* El menú ocupa todo el ancho de la página */
+    display: grid; /* Usamos flex para centrar el contenido */
+    justify-content: center; /* Centramos el contenido horizontalmente */
+    z-index: 1000;
+  }
+
+  .menu {
+    /* Estilo del menú principal */
+    background-color: #0b79d3; /* Color de fondo del menú amarillo */
+    padding: 3px 500px; /* Espacio dentro del menú para que no quede pegado al borde */
+    display: inline-block; /* El menú se ajusta automáticamente al tamaño de su contenido */
+    white-space: nowrap; /* Evita que las palabras se separen en líneas, manteniendo el menú en una sola línea */
+    position: relative; /* La posición del menú se ajusta respecto a su contenedor */
+    top: -8px; /*menú hacia arriba */
+    margin-left: 250px; /* Lo mueve un poquito hacia la derecha */
+    z-index: 1;
+  }
+
+  /* Estilo de la lista dentro del menú */
+  .menu ul {
+    list-style: none; /* Quita los puntos de la lista para que se vea más ordenado */
+    margin: 0; /* Quita el espacio entre los elementos de la lista */
+    padding: 0; /* Quita el espacio dentro de los elementos de la lista */
+    display: flex; /* Organiza los elementos de la lista uno al lado del otro */
+  }
+
+  /* Estilo de cada ítem de la lista del menú */
+  .menu ul li {
+    position: relative; /* La posición de cada ítem se ajusta respecto a su contenedor */
+    left: 20px;
+  }
+
+  /* Estilo de los enlaces dentro de cada ítem del menú */
+  .menu ul li a {
+    display: block; /* Hace que los enlaces ocupen todo el espacio disponible del ítem */
+    padding: 15px 20px; /* Espacio dentro del enlace para que se vea más grande y fácil de hacer clic */
+    color: white; /* Color del texto del enlace es blanco */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    transition: background-color 0.3s; /* El color de fondo cambia suavemente cuando pasas el mouse sobre el enlace */
+    z-index: 1000;
+  }
+
+  /* Cambio de color de fondo cuando pasas el mouse sobre el enlace */
+  .menu ul li a:hover {
+    background-color: #363434; /* Cambia el color de fondo del enlace a gris oscuro cuando pasas el mouse */
+    z-index: 1000;
+  }
+
+  /* Estilo del menú desplegable */
+  .menu ul li ul.submenu {
+    position: fixed;
+    display: none; /* Al principio, los submenús no se ven */
+    width: 90px;
+    position: absolute; /* Los submenús se colocan en una posición específica respecto al menú principal */
+    top: 100%; /* Los submenús aparecen debajo del ítem del menú al que pertenecen */
+    left: 0; /* Los submenús aparecen alineados a la izquierda del ítem del menú */
+    background-color: #333333; /* Fondo del submenú es gris oscuro */
+    border-radius: 0 0 5px 5px; /* Borde redondeado en la parte inferior */
+    text-align: center;
+    padding-left: 10px; /**derecha*/
+    padding-right: 40px; /**izquierda*/
+    z-index: 999;
+  }
+
+  /* Estilo de cada ítem dentro del submenú */
+  .menu ul li ul.submenu li {
+    display: block; /* Cada ítem del submenú aparece en una línea nueva */
+    z-index: 1000;
+  }
+  .menu ul li:hover ul.submenu {
+    display: block; /* El submenú aparece cuando pasas el mouse sobre el ítem del menú */
+    z-index: 999;
+  }
+
+  /* Estilo de los enlaces dentro del submenú */
+  .menu ul li ul.submenu li a {
+    padding: 10px 30px; /* Espacio dentro del enlace del submenú */
+    text-align: center;
+    padding-left: 0px;
+    display: block;
+    z-index: 1000;
+  }
+
+  /* Cambio de color de fondo cuando pasas el mouse sobre el enlace del submenú */
+  .menu ul li ul.submenu li a:hover {
+    position: relative;
+    background-color: #363434; /* Cambia el color de fondo del enlace a gris oscuro cuando pasas el mouse */
+    transform: translateX(-19px);
+    text-align: center;
+    padding-left: 10px; /**derecha*/
+    padding-right: 20px; /**izquierda*/
+    z-index: 1000;
+  }
+
+  /**---------------------------------------------------------------------------------------------------------------------*/
+  .welcome {
+    padding: 0 auto;
+    margin: 0 auto;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 200%;
+    color: #cea800;
+    text-align: center;
+    position: relative;
+    left: 10%;
+    transform: translateY(-50px);
+  }
+
+  .Logo-Transxana img {
+    width: 300px;
+    height: auto;
+    position: relative;
+    left: 540px;
+    transform: translateY(20px);
+  }
+
+  /**----------------------------------------------CONTENEDOR-------------------------------------------------------------------*/
+  .contenedor {
+    padding: 10px;
+    margin: 1px;
+    width: 118%;
+  }
+  .tarjetas {
+    display: grid;
+    grid-template-rows: 300px 300px;
+    background-color: #039cd8;
+    border-radius: 10px;
+    padding: 0px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 10px;
+  }
+  /**------------------------------------------------CONTENIDO PROYECTOS--------------------------------------------------------*/
+  .contenedor-proyectos {
+    display: grid; /* Usamos flex para centrar el contenido */
+    grid-template-columns: 351%;
+    gap: 20px; /* Espacio entre filas y columnas */
+    margin: 0 auto;
+    transform: translateY(-280.1%);
+    height: 80px;
+    position: relative;
+    margin-left: 3.1%;
+    width: 26.7%;
+  }
+  .tarjetas-proyectos {
+    background-color: #fffcfc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra del contenedor */
+    transition: transform 0.3s ease;
+    height: 449px;
+  }
+
+  .p-contenido {
+    font-size: 22px;
+    text-align: start;
+  }
+
+  /**--------------------------------------------------------------------------------------------------------------------*/
+
+  /*----------------------------------------------- Pie de página *---------------------------------------------------------*/
+  footer {
+    background-color: #0b79d3;
+    color: #000000; /* Texto*/
+    text-align: center;
+    position: relative;
+    left: -50px;
+    padding: 20px 0; /* Espacio interno dentro del pie de página */
+    width: 125%; /* Añadido para mantener consistencia */
+    transform: translateY(48px);
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .copyright {
+    color: white;
+  }
+
+  .copyright:hover {
+    text-decoration: none;
+    font-size: 20px;
+    color: #9708f7 !important;
+    transition: color 0.2s;
+  }
+
+  footer .social-media a {
+    color: #007bff; /* texto */
+    margin: 0 10px; /* Espacio alrededor de cada enlace */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+  }
+
+  .social-media {
+    text-align: center; /* Centra los enlaces horizontalmente */
+    margin-top: 20px; /* Margen superior */
+  }
+
+  .social-link.youtube:hover {
+    color: #f70035 !important; /* efecto de cambiar de color al pasar el mouse */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  .social-link.facebook:hover {
+    color: #00b7ff !important; /* efecto de cambiar de color al pasar el mouse */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  .social-link.instagram:hover {
+    background: #833ab4;
+    background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+
+  .social-link.facebook {
+    color: #ffffff; /* texto */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  .social-link.youtube {
+    color: #ffffff; /* texto */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+
+  .social-link.instagram {
+    color: #ffffff; /* Texto */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+
+  .social-link.linkedin {
+    color: #ffffff; /* Color de LinkedIn */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px; /* Tamaño de fuente */
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  /*-----------------------------------------------------------------------------------------------------------------------------*/
+}
+
+/* Laptops estándar (1440px) */
+@media screen and (max-width: 1440px) {
+  /* Estilos para laptops estándar */
+  html {
+    font-family: Arial, sans-serif; /* Usamos la letra Arial para todo el texto */
+    margin: 0; /* Quitamos el espacio en blanco alrededor de la página */
+    padding: 0; /* No agregamos espacio extra adentro de la página */
+    background-color: #f4f4f4; /* Ponemos el fondo de la página de color gris claro */
+    width: 83.7%;
+  }
+  /**----------------------------------------Menu-------------------------------------------------------------------------*/
+
+  .menu-container {
+    /* Contenedor del menú */
+    width: 87.4%; /* El menú ocupa todo el ancho de la página */
+    display: grid; /* Usamos flex para centrar el contenido */
+    justify-content: center; /* Centramos el contenido horizontalmente */
+    z-index: 1000;
+  }
+
+  .menu {
+    /* Estilo del menú principal */
+    background-color: #0b79d3; /* Color de fondo del menú amarillo */
+    padding: 3px 500px; /* Espacio dentro del menú para que no quede pegado al borde */
+    display: inline-block; /* El menú se ajusta automáticamente al tamaño de su contenido */
+    white-space: nowrap; /* Evita que las palabras se separen en líneas, manteniendo el menú en una sola línea */
+    position: relative; /* La posición del menú se ajusta respecto a su contenedor */
+    top: -8px; /*menú hacia arriba */
+    margin-left: 250px; /* Lo mueve un poquito hacia la derecha */
+    z-index: 1;
+  }
+
+  /* Estilo de la lista dentro del menú */
+  .menu ul {
+    list-style: none; /* Quita los puntos de la lista para que se vea más ordenado */
+    margin: 0; /* Quita el espacio entre los elementos de la lista */
+    padding: 0; /* Quita el espacio dentro de los elementos de la lista */
+    display: flex; /* Organiza los elementos de la lista uno al lado del otro */
+  }
+
+  /* Estilo de cada ítem de la lista del menú */
+  .menu ul li {
+    position: relative; /* La posición de cada ítem se ajusta respecto a su contenedor */
+    left: 20px;
+  }
+
+  /* Estilo de los enlaces dentro de cada ítem del menú */
+  .menu ul li a {
+    display: block; /* Hace que los enlaces ocupen todo el espacio disponible del ítem */
+    padding: 15px 20px; /* Espacio dentro del enlace para que se vea más grande y fácil de hacer clic */
+    color: white; /* Color del texto del enlace es blanco */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    transition: background-color 0.3s; /* El color de fondo cambia suavemente cuando pasas el mouse sobre el enlace */
+    z-index: 1000;
+  }
+
+  /* Cambio de color de fondo cuando pasas el mouse sobre el enlace */
+  .menu ul li a:hover {
+    background-color: #363434; /* Cambia el color de fondo del enlace a gris oscuro cuando pasas el mouse */
+    z-index: 1000;
+  }
+
+  /* Estilo del menú desplegable */
+  .menu ul li ul.submenu {
+    position: fixed;
+    display: none; /* Al principio, los submenús no se ven */
+    width: 90px;
+    position: absolute; /* Los submenús se colocan en una posición específica respecto al menú principal */
+    top: 100%; /* Los submenús aparecen debajo del ítem del menú al que pertenecen */
+    left: 0; /* Los submenús aparecen alineados a la izquierda del ítem del menú */
+    background-color: #333333; /* Fondo del submenú es gris oscuro */
+    border-radius: 0 0 5px 5px; /* Borde redondeado en la parte inferior */
+    text-align: center;
+    padding-left: 10px; /**derecha*/
+    padding-right: 40px; /**izquierda*/
+    z-index: 999;
+  }
+
+  /* Estilo de cada ítem dentro del submenú */
+  .menu ul li ul.submenu li {
+    display: block; /* Cada ítem del submenú aparece en una línea nueva */
+    z-index: 1000;
+  }
+  .menu ul li:hover ul.submenu {
+    display: block; /* El submenú aparece cuando pasas el mouse sobre el ítem del menú */
+    z-index: 999;
+  }
+
+  /* Estilo de los enlaces dentro del submenú */
+  .menu ul li ul.submenu li a {
+    padding: 10px 30px; /* Espacio dentro del enlace del submenú */
+    text-align: center;
+    padding-left: 0px;
+    display: block;
+    z-index: 1000;
+  }
+
+  /* Cambio de color de fondo cuando pasas el mouse sobre el enlace del submenú */
+  .menu ul li ul.submenu li a:hover {
+    position: relative;
+    background-color: #363434; /* Cambia el color de fondo del enlace a gris oscuro cuando pasas el mouse */
+    transform: translateX(-19px);
+    text-align: center;
+    padding-left: 10px; /**derecha*/
+    padding-right: 20px; /**izquierda*/
+    z-index: 1000;
+  }
+
+  /**---------------------------------------------------------------------------------------------------------------------*/
+  .welcome {
+    padding: 0 auto;
+    margin: 0 auto;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 200%;
+    color: #cea800;
+    text-align: center;
+    position: relative;
+    left: 10%;
+    transform: translateY(-50px);
+  }
+
+  .Logo-Transxana img {
+    width: 300px;
+    height: auto;
+    position: relative;
+    left: 540px;
+    transform: translateY(20px);
+  }
+
+  /**----------------------------------------------CONTENEDOR-------------------------------------------------------------------*/
+  .contenedor {
+    padding: 10px;
+    margin: 1px;
+    width: 118%;
+  }
+  .tarjetas {
+    display: grid;
+    grid-template-rows: 300px 300px;
+    background-color: #039cd8;
+    border-radius: 10px;
+    padding: 0px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 10px;
+  }
+  /**------------------------------------------------CONTENIDO PROYECTOS--------------------------------------------------------*/
+  .contenedor-proyectos {
+    display: grid; /* Usamos flex para centrar el contenido */
+    grid-template-columns: 351%;
+    gap: 20px; /* Espacio entre filas y columnas */
+    margin: 0 auto;
+    transform: translateY(-280.1%);
+    height: 80px;
+    position: relative;
+    margin-left: 3.1%;
+    width: 26.7%;
+  }
+  .tarjetas-proyectos {
+    background-color: #fffcfc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra del contenedor */
+    transition: transform 0.3s ease;
+    height: 449px;
+  }
+
+  .p-contenido {
+    font-size: 22px;
+    text-align: start;
+  }
+
+  /**--------------------------------------------------------------------------------------------------------------------*/
+
+  /*----------------------------------------------- Pie de página *---------------------------------------------------------*/
+  footer {
+    background-color: #0b79d3;
+    color: #000000; /* Texto*/
+    text-align: center;
+    position: relative;
+    left: -50px;
+    padding: 20px 0; /* Espacio interno dentro del pie de página */
+    width: 125%; /* Añadido para mantener consistencia */
+    transform: translateY(48px);
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .copyright {
+    color: white;
+  }
+
+  .copyright:hover {
+    text-decoration: none;
+    font-size: 20px;
+    color: #9708f7 !important;
+    transition: color 0.2s;
+  }
+
+  footer .social-media a {
+    color: #007bff; /* texto */
+    margin: 0 10px; /* Espacio alrededor de cada enlace */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+  }
+
+  .social-media {
+    text-align: center; /* Centra los enlaces horizontalmente */
+    margin-top: 20px; /* Margen superior */
+  }
+
+  .social-link.youtube:hover {
+    color: #f70035 !important; /* efecto de cambiar de color al pasar el mouse */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  .social-link.facebook:hover {
+    color: #00b7ff !important; /* efecto de cambiar de color al pasar el mouse */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  .social-link.instagram:hover {
+    background: #833ab4;
+    background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+
+  .social-link.facebook {
+    color: #ffffff; /* texto */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  .social-link.youtube {
+    color: #ffffff; /* texto */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+
+  .social-link.instagram {
+    color: #ffffff; /* Texto */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+
+  .social-link.linkedin {
+    color: #ffffff; /* Color de LinkedIn */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px; /* Tamaño de fuente */
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  /*-----------------------------------------------------------------------------------------------------------------------------*/
+}
+
+/* Laptops grandes (1441px a 1919px) */
+@media screen and (min-width: 1441px) and (max-width: 1919px) {
+  /* Estilos para laptops grandes */
+  html {
+    font-family: Arial, sans-serif; /* Usamos la letra Arial para todo el texto */
+    margin: 0; /* Quitamos el espacio en blanco alrededor de la página */
+    padding: 0; /* No agregamos espacio extra adentro de la página */
+    background-color: #f4f4f4; /* Ponemos el fondo de la página de color gris claro */
+    width: 83.7%;
+  }
+  /**----------------------------------------Menu-------------------------------------------------------------------------*/
+
+  .menu-container {
+    /* Contenedor del menú */
+    width: 87.4%; /* El menú ocupa todo el ancho de la página */
+    display: grid; /* Usamos flex para centrar el contenido */
+    justify-content: center; /* Centramos el contenido horizontalmente */
+    z-index: 1000;
+  }
+
+  .menu {
+    /* Estilo del menú principal */
+    background-color: #0b79d3; /* Color de fondo del menú amarillo */
+    padding: 3px 500px; /* Espacio dentro del menú para que no quede pegado al borde */
+    display: inline-block; /* El menú se ajusta automáticamente al tamaño de su contenido */
+    white-space: nowrap; /* Evita que las palabras se separen en líneas, manteniendo el menú en una sola línea */
+    position: relative; /* La posición del menú se ajusta respecto a su contenedor */
+    top: -8px; /*menú hacia arriba */
+    margin-left: 250px; /* Lo mueve un poquito hacia la derecha */
+    z-index: 1;
+  }
+
+  /* Estilo de la lista dentro del menú */
+  .menu ul {
+    list-style: none; /* Quita los puntos de la lista para que se vea más ordenado */
+    margin: 0; /* Quita el espacio entre los elementos de la lista */
+    padding: 0; /* Quita el espacio dentro de los elementos de la lista */
+    display: flex; /* Organiza los elementos de la lista uno al lado del otro */
+  }
+
+  /* Estilo de cada ítem de la lista del menú */
+  .menu ul li {
+    position: relative; /* La posición de cada ítem se ajusta respecto a su contenedor */
+    left: 20px;
+  }
+
+  /* Estilo de los enlaces dentro de cada ítem del menú */
+  .menu ul li a {
+    display: block; /* Hace que los enlaces ocupen todo el espacio disponible del ítem */
+    padding: 15px 20px; /* Espacio dentro del enlace para que se vea más grande y fácil de hacer clic */
+    color: white; /* Color del texto del enlace es blanco */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    transition: background-color 0.3s; /* El color de fondo cambia suavemente cuando pasas el mouse sobre el enlace */
+    z-index: 1000;
+  }
+
+  /* Cambio de color de fondo cuando pasas el mouse sobre el enlace */
+  .menu ul li a:hover {
+    background-color: #363434; /* Cambia el color de fondo del enlace a gris oscuro cuando pasas el mouse */
+    z-index: 1000;
+  }
+
+  /* Estilo del menú desplegable */
+  .menu ul li ul.submenu {
+    position: fixed;
+    display: none; /* Al principio, los submenús no se ven */
+    width: 90px;
+    position: absolute; /* Los submenús se colocan en una posición específica respecto al menú principal */
+    top: 100%; /* Los submenús aparecen debajo del ítem del menú al que pertenecen */
+    left: 0; /* Los submenús aparecen alineados a la izquierda del ítem del menú */
+    background-color: #333333; /* Fondo del submenú es gris oscuro */
+    border-radius: 0 0 5px 5px; /* Borde redondeado en la parte inferior */
+    text-align: center;
+    padding-left: 10px; /**derecha*/
+    padding-right: 40px; /**izquierda*/
+    z-index: 999;
+  }
+
+  /* Estilo de cada ítem dentro del submenú */
+  .menu ul li ul.submenu li {
+    display: block; /* Cada ítem del submenú aparece en una línea nueva */
+    z-index: 1000;
+  }
+  .menu ul li:hover ul.submenu {
+    display: block; /* El submenú aparece cuando pasas el mouse sobre el ítem del menú */
+    z-index: 999;
+  }
+
+  /* Estilo de los enlaces dentro del submenú */
+  .menu ul li ul.submenu li a {
+    padding: 10px 30px; /* Espacio dentro del enlace del submenú */
+    text-align: center;
+    padding-left: 0px;
+    display: block;
+    z-index: 1000;
+  }
+
+  /* Cambio de color de fondo cuando pasas el mouse sobre el enlace del submenú */
+  .menu ul li ul.submenu li a:hover {
+    position: relative;
+    background-color: #363434; /* Cambia el color de fondo del enlace a gris oscuro cuando pasas el mouse */
+    transform: translateX(-19px);
+    text-align: center;
+    padding-left: 10px; /**derecha*/
+    padding-right: 20px; /**izquierda*/
+    z-index: 1000;
+  }
+
+  /**---------------------------------------------------------------------------------------------------------------------*/
+  .welcome {
+    padding: 0 auto;
+    margin: 0 auto;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 200%;
+    color: #cea800;
+    text-align: center;
+    position: relative;
+    left: 10%;
+    transform: translateY(-50px);
+  }
+
+  .Logo-Transxana img {
+    width: 300px;
+    height: auto;
+    position: relative;
+    left: 540px;
+    transform: translateY(20px);
+  }
+
+  /**----------------------------------------------CONTENEDOR-------------------------------------------------------------------*/
+  .contenedor {
+    padding: 10px;
+    margin: 1px;
+    width: 118%;
+  }
+  .tarjetas {
+    display: grid;
+    grid-template-rows: 300px 300px;
+    background-color: #039cd8;
+    border-radius: 10px;
+    padding: 0px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 10px;
+  }
+  /**------------------------------------------------CONTENIDO PROYECTOS--------------------------------------------------------*/
+  .contenedor-proyectos {
+    display: grid; /* Usamos flex para centrar el contenido */
+    grid-template-columns: 351%;
+    gap: 20px; /* Espacio entre filas y columnas */
+    margin: 0 auto;
+    transform: translateY(-280.1%);
+    height: 80px;
+    position: relative;
+    margin-left: 3.1%;
+    width: 26.7%;
+  }
+  .tarjetas-proyectos {
+    background-color: #fffcfc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra del contenedor */
+    transition: transform 0.3s ease;
+    height: 449px;
+  }
+
+  .p-contenido {
+    font-size: 22px;
+    text-align: start;
+  }
+
+  /**--------------------------------------------------------------------------------------------------------------------*/
+
+  /*----------------------------------------------- Pie de página *---------------------------------------------------------*/
+  footer {
+    background-color: #0b79d3;
+    color: #000000; /* Texto*/
+    text-align: center;
+    position: relative;
+    left: -50px;
+    padding: 20px 0; /* Espacio interno dentro del pie de página */
+    width: 125%; /* Añadido para mantener consistencia */
+    transform: translateY(48px);
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .copyright {
+    color: white;
+  }
+
+  .copyright:hover {
+    text-decoration: none;
+    font-size: 20px;
+    color: #9708f7 !important;
+    transition: color 0.2s;
+  }
+
+  footer .social-media a {
+    color: #007bff; /* texto */
+    margin: 0 10px; /* Espacio alrededor de cada enlace */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+  }
+
+  .social-media {
+    text-align: center; /* Centra los enlaces horizontalmente */
+    margin-top: 20px; /* Margen superior */
+  }
+
+  .social-link.youtube:hover {
+    color: #f70035 !important; /* efecto de cambiar de color al pasar el mouse */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  .social-link.facebook:hover {
+    color: #00b7ff !important; /* efecto de cambiar de color al pasar el mouse */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  .social-link.instagram:hover {
+    background: #833ab4;
+    background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+
+  .social-link.facebook {
+    color: #ffffff; /* texto */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  .social-link.youtube {
+    color: #ffffff; /* texto */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+
+  .social-link.instagram {
+    color: #ffffff; /* Texto */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+
+  .social-link.linkedin {
+    color: #ffffff; /* Color de LinkedIn */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px; /* Tamaño de fuente */
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  /*-----------------------------------------------------------------------------------------------------------------------------*/
+}
+
+/* Monitores Full HD (1920px a 2559px) */
+@media screen and (min-width: 1920px) and (max-width: 2559px) {
+  /* Estilos para monitores Full HD */
+  html {
+    font-family: Arial, sans-serif; /* Usamos la letra Arial para todo el texto */
+    margin: 0; /* Quitamos el espacio en blanco alrededor de la página */
+    padding: 0; /* No agregamos espacio extra adentro de la página */
+    background-color: #f4f4f4; /* Ponemos el fondo de la página de color gris claro */
+    width: 83.7%;
+  }
+  /**----------------------------------------Menu-------------------------------------------------------------------------*/
+
+  .menu-container {
+    /* Contenedor del menú */
+    width: 87.4%; /* El menú ocupa todo el ancho de la página */
+    display: grid; /* Usamos flex para centrar el contenido */
+    justify-content: center; /* Centramos el contenido horizontalmente */
+    z-index: 1000;
+  }
+
+  .menu {
+    /* Estilo del menú principal */
+    background-color: #0b79d3; /* Color de fondo del menú amarillo */
+    padding: 3px 500px; /* Espacio dentro del menú para que no quede pegado al borde */
+    display: inline-block; /* El menú se ajusta automáticamente al tamaño de su contenido */
+    white-space: nowrap; /* Evita que las palabras se separen en líneas, manteniendo el menú en una sola línea */
+    position: relative; /* La posición del menú se ajusta respecto a su contenedor */
+    top: -8px; /*menú hacia arriba */
+    margin-left: 250px; /* Lo mueve un poquito hacia la derecha */
+    z-index: 1;
+  }
+
+  /* Estilo de la lista dentro del menú */
+  .menu ul {
+    list-style: none; /* Quita los puntos de la lista para que se vea más ordenado */
+    margin: 0; /* Quita el espacio entre los elementos de la lista */
+    padding: 0; /* Quita el espacio dentro de los elementos de la lista */
+    display: flex; /* Organiza los elementos de la lista uno al lado del otro */
+  }
+
+  /* Estilo de cada ítem de la lista del menú */
+  .menu ul li {
+    position: relative; /* La posición de cada ítem se ajusta respecto a su contenedor */
+    left: 20px;
+  }
+
+  /* Estilo de los enlaces dentro de cada ítem del menú */
+  .menu ul li a {
+    display: block; /* Hace que los enlaces ocupen todo el espacio disponible del ítem */
+    padding: 15px 20px; /* Espacio dentro del enlace para que se vea más grande y fácil de hacer clic */
+    color: white; /* Color del texto del enlace es blanco */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    transition: background-color 0.3s; /* El color de fondo cambia suavemente cuando pasas el mouse sobre el enlace */
+    z-index: 1000;
+  }
+
+  /* Cambio de color de fondo cuando pasas el mouse sobre el enlace */
+  .menu ul li a:hover {
+    background-color: #363434; /* Cambia el color de fondo del enlace a gris oscuro cuando pasas el mouse */
+    z-index: 1000;
+  }
+
+  /* Estilo del menú desplegable */
+  .menu ul li ul.submenu {
+    position: fixed;
+    display: none; /* Al principio, los submenús no se ven */
+    width: 90px;
+    position: absolute; /* Los submenús se colocan en una posición específica respecto al menú principal */
+    top: 100%; /* Los submenús aparecen debajo del ítem del menú al que pertenecen */
+    left: 0; /* Los submenús aparecen alineados a la izquierda del ítem del menú */
+    background-color: #333333; /* Fondo del submenú es gris oscuro */
+    border-radius: 0 0 5px 5px; /* Borde redondeado en la parte inferior */
+    text-align: center;
+    padding-left: 10px; /**derecha*/
+    padding-right: 40px; /**izquierda*/
+    z-index: 999;
+  }
+
+  /* Estilo de cada ítem dentro del submenú */
+  .menu ul li ul.submenu li {
+    display: block; /* Cada ítem del submenú aparece en una línea nueva */
+    z-index: 1000;
+  }
+  .menu ul li:hover ul.submenu {
+    display: block; /* El submenú aparece cuando pasas el mouse sobre el ítem del menú */
+    z-index: 999;
+  }
+
+  /* Estilo de los enlaces dentro del submenú */
+  .menu ul li ul.submenu li a {
+    padding: 10px 30px; /* Espacio dentro del enlace del submenú */
+    text-align: center;
+    padding-left: 0px;
+    display: block;
+    z-index: 1000;
+  }
+
+  /* Cambio de color de fondo cuando pasas el mouse sobre el enlace del submenú */
+  .menu ul li ul.submenu li a:hover {
+    position: relative;
+    background-color: #363434; /* Cambia el color de fondo del enlace a gris oscuro cuando pasas el mouse */
+    transform: translateX(-19px);
+    text-align: center;
+    padding-left: 10px; /**derecha*/
+    padding-right: 20px; /**izquierda*/
+    z-index: 1000;
+  }
+
+  /**---------------------------------------------------------------------------------------------------------------------*/
+  .welcome {
+    padding: 0 auto;
+    margin: 0 auto;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 200%;
+    color: #cea800;
+    text-align: center;
+    position: relative;
+    left: 10%;
+    transform: translateY(-50px);
+  }
+
+  .Logo-Transxana img {
+    width: 300px;
+    height: auto;
+    position: relative;
+    left: 540px;
+    transform: translateY(20px);
+  }
+
+  /**----------------------------------------------CONTENEDOR-------------------------------------------------------------------*/
+  .contenedor {
+    padding: 10px;
+    margin: 1px;
+    width: 118%;
+  }
+  .tarjetas {
+    display: grid;
+    grid-template-rows: 300px 300px;
+    background-color: #039cd8;
+    border-radius: 10px;
+    padding: 0px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 10px;
+  }
+  /**------------------------------------------------CONTENIDO PROYECTOS--------------------------------------------------------*/
+  .contenedor-proyectos {
+    display: grid; /* Usamos flex para centrar el contenido */
+    grid-template-columns: 351%;
+    gap: 20px; /* Espacio entre filas y columnas */
+    margin: 0 auto;
+    transform: translateY(-280.1%);
+    height: 80px;
+    position: relative;
+    margin-left: 3.1%;
+    width: 26.7%;
+  }
+  .tarjetas-proyectos {
+    background-color: #fffcfc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra del contenedor */
+    transition: transform 0.3s ease;
+    height: 449px;
+  }
+
+  .p-contenido {
+    font-size: 22px;
+    text-align: start;
+  }
+
+  /**--------------------------------------------------------------------------------------------------------------------*/
+
+  /*----------------------------------------------- Pie de página *---------------------------------------------------------*/
+  footer {
+    background-color: #0b79d3;
+    color: #000000; /* Texto*/
+    text-align: center;
+    position: relative;
+    left: -50px;
+    padding: 20px 0; /* Espacio interno dentro del pie de página */
+    width: 125%; /* Añadido para mantener consistencia */
+    transform: translateY(48px);
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .copyright {
+    color: white;
+  }
+
+  .copyright:hover {
+    text-decoration: none;
+    font-size: 20px;
+    color: #9708f7 !important;
+    transition: color 0.2s;
+  }
+
+  footer .social-media a {
+    color: #007bff; /* texto */
+    margin: 0 10px; /* Espacio alrededor de cada enlace */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+  }
+
+  .social-media {
+    text-align: center; /* Centra los enlaces horizontalmente */
+    margin-top: 20px; /* Margen superior */
+  }
+
+  .social-link.youtube:hover {
+    color: #f70035 !important; /* efecto de cambiar de color al pasar el mouse */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  .social-link.facebook:hover {
+    color: #00b7ff !important; /* efecto de cambiar de color al pasar el mouse */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  .social-link.instagram:hover {
+    background: #833ab4;
+    background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+
+  .social-link.facebook {
+    color: #ffffff; /* texto */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  .social-link.youtube {
+    color: #ffffff; /* texto */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+
+  .social-link.instagram {
+    color: #ffffff; /* Texto */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+
+  .social-link.linkedin {
+    color: #ffffff; /* Color de LinkedIn */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px; /* Tamaño de fuente */
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  /*-----------------------------------------------------------------------------------------------------------------------------*/
+}
+
+/* Monitores 2K (2560px a 3839px) */
+@media screen and (min-width: 2560px) and (max-width: 3839px) {
+  /* Estilos para monitores 2K */
+  html {
+    font-family: Arial, sans-serif; /* Usamos la letra Arial para todo el texto */
+    margin: 0; /* Quitamos el espacio en blanco alrededor de la página */
+    padding: 0; /* No agregamos espacio extra adentro de la página */
+    background-color: #f4f4f4; /* Ponemos el fondo de la página de color gris claro */
+    width: 83.7%;
+  }
+  /**----------------------------------------Menu-------------------------------------------------------------------------*/
+
+  .menu-container {
+    /* Contenedor del menú */
+    width: 87.4%; /* El menú ocupa todo el ancho de la página */
+    display: grid; /* Usamos flex para centrar el contenido */
+    justify-content: center; /* Centramos el contenido horizontalmente */
+    z-index: 1000;
+  }
+
+  .menu {
+    /* Estilo del menú principal */
+    background-color: #0b79d3; /* Color de fondo del menú amarillo */
+    padding: 3px 500px; /* Espacio dentro del menú para que no quede pegado al borde */
+    display: inline-block; /* El menú se ajusta automáticamente al tamaño de su contenido */
+    white-space: nowrap; /* Evita que las palabras se separen en líneas, manteniendo el menú en una sola línea */
+    position: relative; /* La posición del menú se ajusta respecto a su contenedor */
+    top: -8px; /*menú hacia arriba */
+    margin-left: 250px; /* Lo mueve un poquito hacia la derecha */
+    z-index: 1;
+  }
+
+  /* Estilo de la lista dentro del menú */
+  .menu ul {
+    list-style: none; /* Quita los puntos de la lista para que se vea más ordenado */
+    margin: 0; /* Quita el espacio entre los elementos de la lista */
+    padding: 0; /* Quita el espacio dentro de los elementos de la lista */
+    display: flex; /* Organiza los elementos de la lista uno al lado del otro */
+  }
+
+  /* Estilo de cada ítem de la lista del menú */
+  .menu ul li {
+    position: relative; /* La posición de cada ítem se ajusta respecto a su contenedor */
+    left: 20px;
+  }
+
+  /* Estilo de los enlaces dentro de cada ítem del menú */
+  .menu ul li a {
+    display: block; /* Hace que los enlaces ocupen todo el espacio disponible del ítem */
+    padding: 15px 20px; /* Espacio dentro del enlace para que se vea más grande y fácil de hacer clic */
+    color: white; /* Color del texto del enlace es blanco */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    transition: background-color 0.3s; /* El color de fondo cambia suavemente cuando pasas el mouse sobre el enlace */
+    z-index: 1000;
+  }
+
+  /* Cambio de color de fondo cuando pasas el mouse sobre el enlace */
+  .menu ul li a:hover {
+    background-color: #363434; /* Cambia el color de fondo del enlace a gris oscuro cuando pasas el mouse */
+    z-index: 1000;
+  }
+
+  /* Estilo del menú desplegable */
+  .menu ul li ul.submenu {
+    position: fixed;
+    display: none; /* Al principio, los submenús no se ven */
+    width: 90px;
+    position: absolute; /* Los submenús se colocan en una posición específica respecto al menú principal */
+    top: 100%; /* Los submenús aparecen debajo del ítem del menú al que pertenecen */
+    left: 0; /* Los submenús aparecen alineados a la izquierda del ítem del menú */
+    background-color: #333333; /* Fondo del submenú es gris oscuro */
+    border-radius: 0 0 5px 5px; /* Borde redondeado en la parte inferior */
+    text-align: center;
+    padding-left: 10px; /**derecha*/
+    padding-right: 40px; /**izquierda*/
+    z-index: 999;
+  }
+
+  /* Estilo de cada ítem dentro del submenú */
+  .menu ul li ul.submenu li {
+    display: block; /* Cada ítem del submenú aparece en una línea nueva */
+    z-index: 1000;
+  }
+  .menu ul li:hover ul.submenu {
+    display: block; /* El submenú aparece cuando pasas el mouse sobre el ítem del menú */
+    z-index: 999;
+  }
+
+  /* Estilo de los enlaces dentro del submenú */
+  .menu ul li ul.submenu li a {
+    padding: 10px 30px; /* Espacio dentro del enlace del submenú */
+    text-align: center;
+    padding-left: 0px;
+    display: block;
+    z-index: 1000;
+  }
+
+  /* Cambio de color de fondo cuando pasas el mouse sobre el enlace del submenú */
+  .menu ul li ul.submenu li a:hover {
+    position: relative;
+    background-color: #363434; /* Cambia el color de fondo del enlace a gris oscuro cuando pasas el mouse */
+    transform: translateX(-19px);
+    text-align: center;
+    padding-left: 10px; /**derecha*/
+    padding-right: 20px; /**izquierda*/
+    z-index: 1000;
+  }
+
+  /**---------------------------------------------------------------------------------------------------------------------*/
+  .welcome {
+    padding: 0 auto;
+    margin: 0 auto;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 200%;
+    color: #cea800;
+    text-align: center;
+    position: relative;
+    left: 10%;
+    transform: translateY(-50px);
+  }
+
+  .Logo-Transxana img {
+    width: 300px;
+    height: auto;
+    position: relative;
+    left: 540px;
+    transform: translateY(20px);
+  }
+
+  /**----------------------------------------------CONTENEDOR-------------------------------------------------------------------*/
+  .contenedor {
+    padding: 10px;
+    margin: 1px;
+    width: 118%;
+  }
+  .tarjetas {
+    display: grid;
+    grid-template-rows: 300px 300px;
+    background-color: #039cd8;
+    border-radius: 10px;
+    padding: 0px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 10px;
+  }
+  /**------------------------------------------------CONTENIDO PROYECTOS--------------------------------------------------------*/
+  .contenedor-proyectos {
+    display: grid; /* Usamos flex para centrar el contenido */
+    grid-template-columns: 351%;
+    gap: 20px; /* Espacio entre filas y columnas */
+    margin: 0 auto;
+    transform: translateY(-280.1%);
+    height: 80px;
+    position: relative;
+    margin-left: 3.1%;
+    width: 26.7%;
+  }
+  .tarjetas-proyectos {
+    background-color: #fffcfc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra del contenedor */
+    transition: transform 0.3s ease;
+    height: 449px;
+  }
+
+  .p-contenido {
+    font-size: 22px;
+    text-align: start;
+  }
+
+  /**--------------------------------------------------------------------------------------------------------------------*/
+
+  /*----------------------------------------------- Pie de página *---------------------------------------------------------*/
+  footer {
+    background-color: #0b79d3;
+    color: #000000; /* Texto*/
+    text-align: center;
+    position: relative;
+    left: -50px;
+    padding: 20px 0; /* Espacio interno dentro del pie de página */
+    width: 125%; /* Añadido para mantener consistencia */
+    transform: translateY(48px);
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .copyright {
+    color: white;
+  }
+
+  .copyright:hover {
+    text-decoration: none;
+    font-size: 20px;
+    color: #9708f7 !important;
+    transition: color 0.2s;
+  }
+
+  footer .social-media a {
+    color: #007bff; /* texto */
+    margin: 0 10px; /* Espacio alrededor de cada enlace */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+  }
+
+  .social-media {
+    text-align: center; /* Centra los enlaces horizontalmente */
+    margin-top: 20px; /* Margen superior */
+  }
+
+  .social-link.youtube:hover {
+    color: #f70035 !important; /* efecto de cambiar de color al pasar el mouse */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  .social-link.facebook:hover {
+    color: #00b7ff !important; /* efecto de cambiar de color al pasar el mouse */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  .social-link.instagram:hover {
+    background: #833ab4;
+    background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+
+  .social-link.facebook {
+    color: #ffffff; /* texto */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  .social-link.youtube {
+    color: #ffffff; /* texto */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+
+  .social-link.instagram {
+    color: #ffffff; /* Texto */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+
+  .social-link.linkedin {
+    color: #ffffff; /* Color de LinkedIn */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px; /* Tamaño de fuente */
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  /*-----------------------------------------------------------------------------------------------------------------------------*/
+}
+
+/* Monitores 4K (3840px a 5119px) */
+@media screen and (min-width: 3840px) and (max-width: 5119px) {
+  /* Estilos para monitores 4K */
+  html {
+    font-family: Arial, sans-serif; /* Usamos la letra Arial para todo el texto */
+    margin: 0; /* Quitamos el espacio en blanco alrededor de la página */
+    padding: 0; /* No agregamos espacio extra adentro de la página */
+    background-color: #f4f4f4; /* Ponemos el fondo de la página de color gris claro */
+    width: 83.7%;
+  }
+  /**----------------------------------------Menu-------------------------------------------------------------------------*/
+
+  .menu-container {
+    /* Contenedor del menú */
+    width: 87.4%; /* El menú ocupa todo el ancho de la página */
+    display: grid; /* Usamos flex para centrar el contenido */
+    justify-content: center; /* Centramos el contenido horizontalmente */
+    z-index: 1000;
+  }
+
+  .menu {
+    /* Estilo del menú principal */
+    background-color: #0b79d3; /* Color de fondo del menú amarillo */
+    padding: 3px 500px; /* Espacio dentro del menú para que no quede pegado al borde */
+    display: inline-block; /* El menú se ajusta automáticamente al tamaño de su contenido */
+    white-space: nowrap; /* Evita que las palabras se separen en líneas, manteniendo el menú en una sola línea */
+    position: relative; /* La posición del menú se ajusta respecto a su contenedor */
+    top: -8px; /*menú hacia arriba */
+    margin-left: 250px; /* Lo mueve un poquito hacia la derecha */
+    z-index: 1;
+  }
+
+  /* Estilo de la lista dentro del menú */
+  .menu ul {
+    list-style: none; /* Quita los puntos de la lista para que se vea más ordenado */
+    margin: 0; /* Quita el espacio entre los elementos de la lista */
+    padding: 0; /* Quita el espacio dentro de los elementos de la lista */
+    display: flex; /* Organiza los elementos de la lista uno al lado del otro */
+  }
+
+  /* Estilo de cada ítem de la lista del menú */
+  .menu ul li {
+    position: relative; /* La posición de cada ítem se ajusta respecto a su contenedor */
+    left: 20px;
+  }
+
+  /* Estilo de los enlaces dentro de cada ítem del menú */
+  .menu ul li a {
+    display: block; /* Hace que los enlaces ocupen todo el espacio disponible del ítem */
+    padding: 15px 20px; /* Espacio dentro del enlace para que se vea más grande y fácil de hacer clic */
+    color: white; /* Color del texto del enlace es blanco */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    transition: background-color 0.3s; /* El color de fondo cambia suavemente cuando pasas el mouse sobre el enlace */
+    z-index: 1000;
+  }
+
+  /* Cambio de color de fondo cuando pasas el mouse sobre el enlace */
+  .menu ul li a:hover {
+    background-color: #363434; /* Cambia el color de fondo del enlace a gris oscuro cuando pasas el mouse */
+    z-index: 1000;
+  }
+
+  /* Estilo del menú desplegable */
+  .menu ul li ul.submenu {
+    position: fixed;
+    display: none; /* Al principio, los submenús no se ven */
+    width: 90px;
+    position: absolute; /* Los submenús se colocan en una posición específica respecto al menú principal */
+    top: 100%; /* Los submenús aparecen debajo del ítem del menú al que pertenecen */
+    left: 0; /* Los submenús aparecen alineados a la izquierda del ítem del menú */
+    background-color: #333333; /* Fondo del submenú es gris oscuro */
+    border-radius: 0 0 5px 5px; /* Borde redondeado en la parte inferior */
+    text-align: center;
+    padding-left: 10px; /**derecha*/
+    padding-right: 40px; /**izquierda*/
+    z-index: 999;
+  }
+
+  /* Estilo de cada ítem dentro del submenú */
+  .menu ul li ul.submenu li {
+    display: block; /* Cada ítem del submenú aparece en una línea nueva */
+    z-index: 1000;
+  }
+  .menu ul li:hover ul.submenu {
+    display: block; /* El submenú aparece cuando pasas el mouse sobre el ítem del menú */
+    z-index: 999;
+  }
+
+  /* Estilo de los enlaces dentro del submenú */
+  .menu ul li ul.submenu li a {
+    padding: 10px 30px; /* Espacio dentro del enlace del submenú */
+    text-align: center;
+    padding-left: 0px;
+    display: block;
+    z-index: 1000;
+  }
+
+  /* Cambio de color de fondo cuando pasas el mouse sobre el enlace del submenú */
+  .menu ul li ul.submenu li a:hover {
+    position: relative;
+    background-color: #363434; /* Cambia el color de fondo del enlace a gris oscuro cuando pasas el mouse */
+    transform: translateX(-19px);
+    text-align: center;
+    padding-left: 10px; /**derecha*/
+    padding-right: 20px; /**izquierda*/
+    z-index: 1000;
+  }
+
+  /**---------------------------------------------------------------------------------------------------------------------*/
+  .welcome {
+    padding: 0 auto;
+    margin: 0 auto;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 200%;
+    color: #cea800;
+    text-align: center;
+    position: relative;
+    left: 10%;
+    transform: translateY(-50px);
+  }
+
+  .Logo-Transxana img {
+    width: 300px;
+    height: auto;
+    position: relative;
+    left: 540px;
+    transform: translateY(20px);
+  }
+
+  /**----------------------------------------------CONTENEDOR-------------------------------------------------------------------*/
+  .contenedor {
+    padding: 10px;
+    margin: 1px;
+    width: 118%;
+  }
+  .tarjetas {
+    display: grid;
+    grid-template-rows: 300px 300px;
+    background-color: #039cd8;
+    border-radius: 10px;
+    padding: 0px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 10px;
+  }
+  /**------------------------------------------------CONTENIDO PROYECTOS--------------------------------------------------------*/
+  .contenedor-proyectos {
+    display: grid; /* Usamos flex para centrar el contenido */
+    grid-template-columns: 351%;
+    gap: 20px; /* Espacio entre filas y columnas */
+    margin: 0 auto;
+    transform: translateY(-280.1%);
+    height: 80px;
+    position: relative;
+    margin-left: 3.1%;
+    width: 26.7%;
+  }
+  .tarjetas-proyectos {
+    background-color: #fffcfc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra del contenedor */
+    transition: transform 0.3s ease;
+    height: 449px;
+  }
+
+  .p-contenido {
+    font-size: 22px;
+    text-align: start;
+  }
+
+  /**--------------------------------------------------------------------------------------------------------------------*/
+
+  /*----------------------------------------------- Pie de página *---------------------------------------------------------*/
+  footer {
+    background-color: #0b79d3;
+    color: #000000; /* Texto*/
+    text-align: center;
+    position: relative;
+    left: -50px;
+    padding: 20px 0; /* Espacio interno dentro del pie de página */
+    width: 125%; /* Añadido para mantener consistencia */
+    transform: translateY(48px);
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .copyright {
+    color: white;
+  }
+
+  .copyright:hover {
+    text-decoration: none;
+    font-size: 20px;
+    color: #9708f7 !important;
+    transition: color 0.2s;
+  }
+
+  footer .social-media a {
+    color: #007bff; /* texto */
+    margin: 0 10px; /* Espacio alrededor de cada enlace */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+  }
+
+  .social-media {
+    text-align: center; /* Centra los enlaces horizontalmente */
+    margin-top: 20px; /* Margen superior */
+  }
+
+  .social-link.youtube:hover {
+    color: #f70035 !important; /* efecto de cambiar de color al pasar el mouse */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  .social-link.facebook:hover {
+    color: #00b7ff !important; /* efecto de cambiar de color al pasar el mouse */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  .social-link.instagram:hover {
+    background: #833ab4;
+    background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+
+  .social-link.facebook {
+    color: #ffffff; /* texto */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  .social-link.youtube {
+    color: #ffffff; /* texto */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+
+  .social-link.instagram {
+    color: #ffffff; /* Texto */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+
+  .social-link.linkedin {
+    color: #ffffff; /* Color de LinkedIn */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px; /* Tamaño de fuente */
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  /*-----------------------------------------------------------------------------------------------------------------------------*/
+}
+
+/* Monitores 5K (5120px a 7679px) */
+@media screen and (min-width: 5120px) and (max-width: 7679px) {
+  /* Estilos para monitores 5K */
+  html {
+    font-family: Arial, sans-serif; /* Usamos la letra Arial para todo el texto */
+    margin: 0; /* Quitamos el espacio en blanco alrededor de la página */
+    padding: 0; /* No agregamos espacio extra adentro de la página */
+    background-color: #f4f4f4; /* Ponemos el fondo de la página de color gris claro */
+    width: 83.7%;
+  }
+  /**----------------------------------------Menu-------------------------------------------------------------------------*/
+
+  .menu-container {
+    /* Contenedor del menú */
+    width: 87.4%; /* El menú ocupa todo el ancho de la página */
+    display: grid; /* Usamos flex para centrar el contenido */
+    justify-content: center; /* Centramos el contenido horizontalmente */
+    z-index: 1000;
+  }
+
+  .menu {
+    /* Estilo del menú principal */
+    background-color: #0b79d3; /* Color de fondo del menú amarillo */
+    padding: 3px 500px; /* Espacio dentro del menú para que no quede pegado al borde */
+    display: inline-block; /* El menú se ajusta automáticamente al tamaño de su contenido */
+    white-space: nowrap; /* Evita que las palabras se separen en líneas, manteniendo el menú en una sola línea */
+    position: relative; /* La posición del menú se ajusta respecto a su contenedor */
+    top: -8px; /*menú hacia arriba */
+    margin-left: 250px; /* Lo mueve un poquito hacia la derecha */
+    z-index: 1;
+  }
+
+  /* Estilo de la lista dentro del menú */
+  .menu ul {
+    list-style: none; /* Quita los puntos de la lista para que se vea más ordenado */
+    margin: 0; /* Quita el espacio entre los elementos de la lista */
+    padding: 0; /* Quita el espacio dentro de los elementos de la lista */
+    display: flex; /* Organiza los elementos de la lista uno al lado del otro */
+  }
+
+  /* Estilo de cada ítem de la lista del menú */
+  .menu ul li {
+    position: relative; /* La posición de cada ítem se ajusta respecto a su contenedor */
+    left: 20px;
+  }
+
+  /* Estilo de los enlaces dentro de cada ítem del menú */
+  .menu ul li a {
+    display: block; /* Hace que los enlaces ocupen todo el espacio disponible del ítem */
+    padding: 15px 20px; /* Espacio dentro del enlace para que se vea más grande y fácil de hacer clic */
+    color: white; /* Color del texto del enlace es blanco */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    transition: background-color 0.3s; /* El color de fondo cambia suavemente cuando pasas el mouse sobre el enlace */
+    z-index: 1000;
+  }
+
+  /* Cambio de color de fondo cuando pasas el mouse sobre el enlace */
+  .menu ul li a:hover {
+    background-color: #363434; /* Cambia el color de fondo del enlace a gris oscuro cuando pasas el mouse */
+    z-index: 1000;
+  }
+
+  /* Estilo del menú desplegable */
+  .menu ul li ul.submenu {
+    position: fixed;
+    display: none; /* Al principio, los submenús no se ven */
+    width: 90px;
+    position: absolute; /* Los submenús se colocan en una posición específica respecto al menú principal */
+    top: 100%; /* Los submenús aparecen debajo del ítem del menú al que pertenecen */
+    left: 0; /* Los submenús aparecen alineados a la izquierda del ítem del menú */
+    background-color: #333333; /* Fondo del submenú es gris oscuro */
+    border-radius: 0 0 5px 5px; /* Borde redondeado en la parte inferior */
+    text-align: center;
+    padding-left: 10px; /**derecha*/
+    padding-right: 40px; /**izquierda*/
+    z-index: 999;
+  }
+
+  /* Estilo de cada ítem dentro del submenú */
+  .menu ul li ul.submenu li {
+    display: block; /* Cada ítem del submenú aparece en una línea nueva */
+    z-index: 1000;
+  }
+  .menu ul li:hover ul.submenu {
+    display: block; /* El submenú aparece cuando pasas el mouse sobre el ítem del menú */
+    z-index: 999;
+  }
+
+  /* Estilo de los enlaces dentro del submenú */
+  .menu ul li ul.submenu li a {
+    padding: 10px 30px; /* Espacio dentro del enlace del submenú */
+    text-align: center;
+    padding-left: 0px;
+    display: block;
+    z-index: 1000;
+  }
+
+  /* Cambio de color de fondo cuando pasas el mouse sobre el enlace del submenú */
+  .menu ul li ul.submenu li a:hover {
+    position: relative;
+    background-color: #363434; /* Cambia el color de fondo del enlace a gris oscuro cuando pasas el mouse */
+    transform: translateX(-19px);
+    text-align: center;
+    padding-left: 10px; /**derecha*/
+    padding-right: 20px; /**izquierda*/
+    z-index: 1000;
+  }
+
+  /**---------------------------------------------------------------------------------------------------------------------*/
+  .welcome {
+    padding: 0 auto;
+    margin: 0 auto;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 200%;
+    color: #cea800;
+    text-align: center;
+    position: relative;
+    left: 10%;
+    transform: translateY(-50px);
+  }
+
+  .Logo-Transxana img {
+    width: 300px;
+    height: auto;
+    position: relative;
+    left: 540px;
+    transform: translateY(20px);
+  }
+
+  /**----------------------------------------------CONTENEDOR-------------------------------------------------------------------*/
+  .contenedor {
+    padding: 10px;
+    margin: 1px;
+    width: 118%;
+  }
+  .tarjetas {
+    display: grid;
+    grid-template-rows: 300px 300px;
+    background-color: #039cd8;
+    border-radius: 10px;
+    padding: 0px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 10px;
+  }
+  /**------------------------------------------------CONTENIDO PROYECTOS--------------------------------------------------------*/
+  .contenedor-proyectos {
+    display: grid; /* Usamos flex para centrar el contenido */
+    grid-template-columns: 351%;
+    gap: 20px; /* Espacio entre filas y columnas */
+    margin: 0 auto;
+    transform: translateY(-280.1%);
+    height: 80px;
+    position: relative;
+    margin-left: 3.1%;
+    width: 26.7%;
+  }
+  .tarjetas-proyectos {
+    background-color: #fffcfc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra del contenedor */
+    transition: transform 0.3s ease;
+    height: 449px;
+  }
+
+  .p-contenido {
+    font-size: 22px;
+    text-align: start;
+  }
+
+  /**--------------------------------------------------------------------------------------------------------------------*/
+
+  /*----------------------------------------------- Pie de página *---------------------------------------------------------*/
+  footer {
+    background-color: #0b79d3;
+    color: #000000; /* Texto*/
+    text-align: center;
+    position: relative;
+    left: -50px;
+    padding: 20px 0; /* Espacio interno dentro del pie de página */
+    width: 125%; /* Añadido para mantener consistencia */
+    transform: translateY(48px);
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .copyright {
+    color: white;
+  }
+
+  .copyright:hover {
+    text-decoration: none;
+    font-size: 20px;
+    color: #9708f7 !important;
+    transition: color 0.2s;
+  }
+
+  footer .social-media a {
+    color: #007bff; /* texto */
+    margin: 0 10px; /* Espacio alrededor de cada enlace */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+  }
+
+  .social-media {
+    text-align: center; /* Centra los enlaces horizontalmente */
+    margin-top: 20px; /* Margen superior */
+  }
+
+  .social-link.youtube:hover {
+    color: #f70035 !important; /* efecto de cambiar de color al pasar el mouse */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  .social-link.facebook:hover {
+    color: #00b7ff !important; /* efecto de cambiar de color al pasar el mouse */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  .social-link.instagram:hover {
+    background: #833ab4;
+    background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+
+  .social-link.facebook {
+    color: #ffffff; /* texto */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  .social-link.youtube {
+    color: #ffffff; /* texto */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+
+  .social-link.instagram {
+    color: #ffffff; /* Texto */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+
+  .social-link.linkedin {
+    color: #ffffff; /* Color de LinkedIn */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px; /* Tamaño de fuente */
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  /*-----------------------------------------------------------------------------------------------------------------------------*/
+}
+
+/* Monitores 8K y superiores (7680px en adelante) */
+@media screen and (min-width: 7680px) {
+  /* Estilos para monitores 8K y superiores */
+  html {
+    font-family: Arial, sans-serif; /* Usamos la letra Arial para todo el texto */
+    margin: 0; /* Quitamos el espacio en blanco alrededor de la página */
+    padding: 0; /* No agregamos espacio extra adentro de la página */
+    background-color: #f4f4f4; /* Ponemos el fondo de la página de color gris claro */
+    width: 83.7%;
+  }
+  /**----------------------------------------Menu-------------------------------------------------------------------------*/
+
+  .menu-container {
+    /* Contenedor del menú */
+    width: 87.4%; /* El menú ocupa todo el ancho de la página */
+    display: grid; /* Usamos flex para centrar el contenido */
+    justify-content: center; /* Centramos el contenido horizontalmente */
+    z-index: 1000;
+  }
+
+  .menu {
+    /* Estilo del menú principal */
+    background-color: #0b79d3; /* Color de fondo del menú amarillo */
+    padding: 3px 500px; /* Espacio dentro del menú para que no quede pegado al borde */
+    display: inline-block; /* El menú se ajusta automáticamente al tamaño de su contenido */
+    white-space: nowrap; /* Evita que las palabras se separen en líneas, manteniendo el menú en una sola línea */
+    position: relative; /* La posición del menú se ajusta respecto a su contenedor */
+    top: -8px; /*menú hacia arriba */
+    margin-left: 250px; /* Lo mueve un poquito hacia la derecha */
+    z-index: 1;
+  }
+
+  /* Estilo de la lista dentro del menú */
+  .menu ul {
+    list-style: none; /* Quita los puntos de la lista para que se vea más ordenado */
+    margin: 0; /* Quita el espacio entre los elementos de la lista */
+    padding: 0; /* Quita el espacio dentro de los elementos de la lista */
+    display: flex; /* Organiza los elementos de la lista uno al lado del otro */
+  }
+
+  /* Estilo de cada ítem de la lista del menú */
+  .menu ul li {
+    position: relative; /* La posición de cada ítem se ajusta respecto a su contenedor */
+    left: 20px;
+  }
+
+  /* Estilo de los enlaces dentro de cada ítem del menú */
+  .menu ul li a {
+    display: block; /* Hace que los enlaces ocupen todo el espacio disponible del ítem */
+    padding: 15px 20px; /* Espacio dentro del enlace para que se vea más grande y fácil de hacer clic */
+    color: white; /* Color del texto del enlace es blanco */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    transition: background-color 0.3s; /* El color de fondo cambia suavemente cuando pasas el mouse sobre el enlace */
+    z-index: 1000;
+  }
+
+  /* Cambio de color de fondo cuando pasas el mouse sobre el enlace */
+  .menu ul li a:hover {
+    background-color: #363434; /* Cambia el color de fondo del enlace a gris oscuro cuando pasas el mouse */
+    z-index: 1000;
+  }
+
+  /* Estilo del menú desplegable */
+  .menu ul li ul.submenu {
+    position: fixed;
+    display: none; /* Al principio, los submenús no se ven */
+    width: 90px;
+    position: absolute; /* Los submenús se colocan en una posición específica respecto al menú principal */
+    top: 100%; /* Los submenús aparecen debajo del ítem del menú al que pertenecen */
+    left: 0; /* Los submenús aparecen alineados a la izquierda del ítem del menú */
+    background-color: #333333; /* Fondo del submenú es gris oscuro */
+    border-radius: 0 0 5px 5px; /* Borde redondeado en la parte inferior */
+    text-align: center;
+    padding-left: 10px; /**derecha*/
+    padding-right: 40px; /**izquierda*/
+    z-index: 999;
+  }
+
+  /* Estilo de cada ítem dentro del submenú */
+  .menu ul li ul.submenu li {
+    display: block; /* Cada ítem del submenú aparece en una línea nueva */
+    z-index: 1000;
+  }
+  .menu ul li:hover ul.submenu {
+    display: block; /* El submenú aparece cuando pasas el mouse sobre el ítem del menú */
+    z-index: 999;
+  }
+
+  /* Estilo de los enlaces dentro del submenú */
+  .menu ul li ul.submenu li a {
+    padding: 10px 30px; /* Espacio dentro del enlace del submenú */
+    text-align: center;
+    padding-left: 0px;
+    display: block;
+    z-index: 1000;
+  }
+
+  /* Cambio de color de fondo cuando pasas el mouse sobre el enlace del submenú */
+  .menu ul li ul.submenu li a:hover {
+    position: relative;
+    background-color: #363434; /* Cambia el color de fondo del enlace a gris oscuro cuando pasas el mouse */
+    transform: translateX(-19px);
+    text-align: center;
+    padding-left: 10px; /**derecha*/
+    padding-right: 20px; /**izquierda*/
+    z-index: 1000;
+  }
+
+  /**---------------------------------------------------------------------------------------------------------------------*/
+  .welcome {
+    padding: 0 auto;
+    margin: 0 auto;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 200%;
+    color: #cea800;
+    text-align: center;
+    position: relative;
+    left: 10%;
+    transform: translateY(-50px);
+  }
+
+  .Logo-Transxana img {
+    width: 300px;
+    height: auto;
+    position: relative;
+    left: 540px;
+    transform: translateY(20px);
+  }
+
+  /**----------------------------------------------CONTENEDOR-------------------------------------------------------------------*/
+  .contenedor {
+    padding: 10px;
+    margin: 1px;
+    width: 118%;
+  }
+  .tarjetas {
+    display: grid;
+    grid-template-rows: 300px 300px;
+    background-color: #039cd8;
+    border-radius: 10px;
+    padding: 0px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 10px;
+  }
+  /**------------------------------------------------CONTENIDO PROYECTOS--------------------------------------------------------*/
+  .contenedor-proyectos {
+    display: grid; /* Usamos flex para centrar el contenido */
+    grid-template-columns: 351%;
+    gap: 20px; /* Espacio entre filas y columnas */
+    margin: 0 auto;
+    transform: translateY(-280.1%);
+    height: 80px;
+    position: relative;
+    margin-left: 3.1%;
+    width: 26.7%;
+  }
+  .tarjetas-proyectos {
+    background-color: #fffcfc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra del contenedor */
+    transition: transform 0.3s ease;
+    height: 449px;
+  }
+
+  .p-contenido {
+    font-size: 22px;
+    text-align: start;
+  }
+
+  /**--------------------------------------------------------------------------------------------------------------------*/
+
+  /*----------------------------------------------- Pie de página *---------------------------------------------------------*/
+  footer {
+    background-color: #0b79d3;
+    color: #000000; /* Texto*/
+    text-align: center;
+    position: relative;
+    left: -50px;
+    padding: 20px 0; /* Espacio interno dentro del pie de página */
+    width: 125%; /* Añadido para mantener consistencia */
+    transform: translateY(48px);
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .copyright {
+    color: white;
+  }
+
+  .copyright:hover {
+    text-decoration: none;
+    font-size: 20px;
+    color: #9708f7 !important;
+    transition: color 0.2s;
+  }
+
+  footer .social-media a {
+    color: #007bff; /* texto */
+    margin: 0 10px; /* Espacio alrededor de cada enlace */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+  }
+
+  .social-media {
+    text-align: center; /* Centra los enlaces horizontalmente */
+    margin-top: 20px; /* Margen superior */
+  }
+
+  .social-link.youtube:hover {
+    color: #f70035 !important; /* efecto de cambiar de color al pasar el mouse */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  .social-link.facebook:hover {
+    color: #00b7ff !important; /* efecto de cambiar de color al pasar el mouse */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  .social-link.instagram:hover {
+    background: #833ab4;
+    background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+
+  .social-link.facebook {
+    color: #ffffff; /* texto */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  .social-link.youtube {
+    color: #ffffff; /* texto */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+
+  .social-link.instagram {
+    color: #ffffff; /* Texto */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+
+  .social-link.linkedin {
+    color: #ffffff; /* Color de LinkedIn */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px; /* Tamaño de fuente */
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  /*-----------------------------------------------------------------------------------------------------------------------------*/
+}
+
+/* Pantallas ultrapanorámicas (3440px a 5120px) */
+@media screen and (min-width: 3440px) and (max-width: 5120px) {
+  /* Estilos para monitores ultrapanorámicos */
+  html {
+    font-family: Arial, sans-serif; /* Usamos la letra Arial para todo el texto */
+    margin: 0; /* Quitamos el espacio en blanco alrededor de la página */
+    padding: 0; /* No agregamos espacio extra adentro de la página */
+    background-color: #f4f4f4; /* Ponemos el fondo de la página de color gris claro */
+    width: 83.7%;
+  }
+  /**----------------------------------------Menu-------------------------------------------------------------------------*/
+
+  .menu-container {
+    /* Contenedor del menú */
+    width: 87.4%; /* El menú ocupa todo el ancho de la página */
+    display: grid; /* Usamos flex para centrar el contenido */
+    justify-content: center; /* Centramos el contenido horizontalmente */
+    z-index: 1000;
+  }
+
+  .menu {
+    /* Estilo del menú principal */
+    background-color: #0b79d3; /* Color de fondo del menú amarillo */
+    padding: 3px 500px; /* Espacio dentro del menú para que no quede pegado al borde */
+    display: inline-block; /* El menú se ajusta automáticamente al tamaño de su contenido */
+    white-space: nowrap; /* Evita que las palabras se separen en líneas, manteniendo el menú en una sola línea */
+    position: relative; /* La posición del menú se ajusta respecto a su contenedor */
+    top: -8px; /*menú hacia arriba */
+    margin-left: 250px; /* Lo mueve un poquito hacia la derecha */
+    z-index: 1;
+  }
+
+  /* Estilo de la lista dentro del menú */
+  .menu ul {
+    list-style: none; /* Quita los puntos de la lista para que se vea más ordenado */
+    margin: 0; /* Quita el espacio entre los elementos de la lista */
+    padding: 0; /* Quita el espacio dentro de los elementos de la lista */
+    display: flex; /* Organiza los elementos de la lista uno al lado del otro */
+  }
+
+  /* Estilo de cada ítem de la lista del menú */
+  .menu ul li {
+    position: relative; /* La posición de cada ítem se ajusta respecto a su contenedor */
+    left: 20px;
+  }
+
+  /* Estilo de los enlaces dentro de cada ítem del menú */
+  .menu ul li a {
+    display: block; /* Hace que los enlaces ocupen todo el espacio disponible del ítem */
+    padding: 15px 20px; /* Espacio dentro del enlace para que se vea más grande y fácil de hacer clic */
+    color: white; /* Color del texto del enlace es blanco */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    transition: background-color 0.3s; /* El color de fondo cambia suavemente cuando pasas el mouse sobre el enlace */
+    z-index: 1000;
+  }
+
+  /* Cambio de color de fondo cuando pasas el mouse sobre el enlace */
+  .menu ul li a:hover {
+    background-color: #363434; /* Cambia el color de fondo del enlace a gris oscuro cuando pasas el mouse */
+    z-index: 1000;
+  }
+
+  /* Estilo del menú desplegable */
+  .menu ul li ul.submenu {
+    position: fixed;
+    display: none; /* Al principio, los submenús no se ven */
+    width: 90px;
+    position: absolute; /* Los submenús se colocan en una posición específica respecto al menú principal */
+    top: 100%; /* Los submenús aparecen debajo del ítem del menú al que pertenecen */
+    left: 0; /* Los submenús aparecen alineados a la izquierda del ítem del menú */
+    background-color: #333333; /* Fondo del submenú es gris oscuro */
+    border-radius: 0 0 5px 5px; /* Borde redondeado en la parte inferior */
+    text-align: center;
+    padding-left: 10px; /**derecha*/
+    padding-right: 40px; /**izquierda*/
+    z-index: 999;
+  }
+
+  /* Estilo de cada ítem dentro del submenú */
+  .menu ul li ul.submenu li {
+    display: block; /* Cada ítem del submenú aparece en una línea nueva */
+    z-index: 1000;
+  }
+  .menu ul li:hover ul.submenu {
+    display: block; /* El submenú aparece cuando pasas el mouse sobre el ítem del menú */
+    z-index: 999;
+  }
+
+  /* Estilo de los enlaces dentro del submenú */
+  .menu ul li ul.submenu li a {
+    padding: 10px 30px; /* Espacio dentro del enlace del submenú */
+    text-align: center;
+    padding-left: 0px;
+    display: block;
+    z-index: 1000;
+  }
+
+  /* Cambio de color de fondo cuando pasas el mouse sobre el enlace del submenú */
+  .menu ul li ul.submenu li a:hover {
+    position: relative;
+    background-color: #363434; /* Cambia el color de fondo del enlace a gris oscuro cuando pasas el mouse */
+    transform: translateX(-19px);
+    text-align: center;
+    padding-left: 10px; /**derecha*/
+    padding-right: 20px; /**izquierda*/
+    z-index: 1000;
+  }
+
+  /**---------------------------------------------------------------------------------------------------------------------*/
+  .welcome {
+    padding: 0 auto;
+    margin: 0 auto;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 200%;
+    color: #cea800;
+    text-align: center;
+    position: relative;
+    left: 10%;
+    transform: translateY(-50px);
+  }
+
+  .Logo-Transxana img {
+    width: 300px;
+    height: auto;
+    position: relative;
+    left: 540px;
+    transform: translateY(20px);
+  }
+
+  /**----------------------------------------------CONTENEDOR-------------------------------------------------------------------*/
+  .contenedor {
+    padding: 10px;
+    margin: 1px;
+    width: 118%;
+  }
+  .tarjetas {
+    display: grid;
+    grid-template-rows: 300px 300px;
+    background-color: #039cd8;
+    border-radius: 10px;
+    padding: 0px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 10px;
+  }
+  /**------------------------------------------------CONTENIDO PROYECTOS--------------------------------------------------------*/
+  .contenedor-proyectos {
+    display: grid; /* Usamos flex para centrar el contenido */
+    grid-template-columns: 351%;
+    gap: 20px; /* Espacio entre filas y columnas */
+    margin: 0 auto;
+    transform: translateY(-280.1%);
+    height: 80px;
+    position: relative;
+    margin-left: 3.1%;
+    width: 26.7%;
+  }
+  .tarjetas-proyectos {
+    background-color: #fffcfc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra del contenedor */
+    transition: transform 0.3s ease;
+    height: 449px;
+  }
+
+  .p-contenido {
+    font-size: 22px;
+    text-align: start;
+  }
+
+  /**--------------------------------------------------------------------------------------------------------------------*/
+
+  /*----------------------------------------------- Pie de página *---------------------------------------------------------*/
+  footer {
+    background-color: #0b79d3;
+    color: #000000; /* Texto*/
+    text-align: center;
+    position: relative;
+    left: -50px;
+    padding: 20px 0; /* Espacio interno dentro del pie de página */
+    width: 125%; /* Añadido para mantener consistencia */
+    transform: translateY(48px);
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .copyright {
+    color: white;
+  }
+
+  .copyright:hover {
+    text-decoration: none;
+    font-size: 20px;
+    color: #9708f7 !important;
+    transition: color 0.2s;
+  }
+
+  footer .social-media a {
+    color: #007bff; /* texto */
+    margin: 0 10px; /* Espacio alrededor de cada enlace */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+  }
+
+  .social-media {
+    text-align: center; /* Centra los enlaces horizontalmente */
+    margin-top: 20px; /* Margen superior */
+  }
+
+  .social-link.youtube:hover {
+    color: #f70035 !important; /* efecto de cambiar de color al pasar el mouse */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  .social-link.facebook:hover {
+    color: #00b7ff !important; /* efecto de cambiar de color al pasar el mouse */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  .social-link.instagram:hover {
+    background: #833ab4;
+    background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+
+  .social-link.facebook {
+    color: #ffffff; /* texto */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  .social-link.youtube {
+    color: #ffffff; /* texto */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+
+  .social-link.instagram {
+    color: #ffffff; /* Texto */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+
+  .social-link.linkedin {
+    color: #ffffff; /* Color de LinkedIn */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px; /* Tamaño de fuente */
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  /*-----------------------------------------------------------------------------------------------------------------------------*/
+}
+
+/* Orientación vertical (portrait) */
+@media screen and (orientation: portrait) {
+  /* Estilos específicos para dispositivos en modo vertical */
+  html {
+    font-family: Arial, sans-serif; /* Usamos la letra Arial para todo el texto */
+    margin: 0; /* Quitamos el espacio en blanco alrededor de la página */
+    padding: 0; /* No agregamos espacio extra adentro de la página */
+    background-color: #f4f4f4; /* Ponemos el fondo de la página de color gris claro */
+    width: 83.7%;
+  }
+  /**----------------------------------------Menu-------------------------------------------------------------------------*/
+
+  .menu-container {
+    /* Contenedor del menú */
+    width: 87.4%; /* El menú ocupa todo el ancho de la página */
+    display: grid; /* Usamos flex para centrar el contenido */
+    justify-content: center; /* Centramos el contenido horizontalmente */
+    z-index: 1000;
+  }
+
+  .menu {
+    /* Estilo del menú principal */
+    background-color: #0b79d3; /* Color de fondo del menú amarillo */
+    padding: 3px 500px; /* Espacio dentro del menú para que no quede pegado al borde */
+    display: inline-block; /* El menú se ajusta automáticamente al tamaño de su contenido */
+    white-space: nowrap; /* Evita que las palabras se separen en líneas, manteniendo el menú en una sola línea */
+    position: relative; /* La posición del menú se ajusta respecto a su contenedor */
+    top: -8px; /*menú hacia arriba */
+    margin-left: 250px; /* Lo mueve un poquito hacia la derecha */
+    z-index: 1;
+  }
+
+  /* Estilo de la lista dentro del menú */
+  .menu ul {
+    list-style: none; /* Quita los puntos de la lista para que se vea más ordenado */
+    margin: 0; /* Quita el espacio entre los elementos de la lista */
+    padding: 0; /* Quita el espacio dentro de los elementos de la lista */
+    display: flex; /* Organiza los elementos de la lista uno al lado del otro */
+  }
+
+  /* Estilo de cada ítem de la lista del menú */
+  .menu ul li {
+    position: relative; /* La posición de cada ítem se ajusta respecto a su contenedor */
+    left: 20px;
+  }
+
+  /* Estilo de los enlaces dentro de cada ítem del menú */
+  .menu ul li a {
+    display: block; /* Hace que los enlaces ocupen todo el espacio disponible del ítem */
+    padding: 15px 20px; /* Espacio dentro del enlace para que se vea más grande y fácil de hacer clic */
+    color: white; /* Color del texto del enlace es blanco */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    transition: background-color 0.3s; /* El color de fondo cambia suavemente cuando pasas el mouse sobre el enlace */
+    z-index: 1000;
+  }
+
+  /* Cambio de color de fondo cuando pasas el mouse sobre el enlace */
+  .menu ul li a:hover {
+    background-color: #363434; /* Cambia el color de fondo del enlace a gris oscuro cuando pasas el mouse */
+    z-index: 1000;
+  }
+
+  /* Estilo del menú desplegable */
+  .menu ul li ul.submenu {
+    position: fixed;
+    display: none; /* Al principio, los submenús no se ven */
+    width: 90px;
+    position: absolute; /* Los submenús se colocan en una posición específica respecto al menú principal */
+    top: 100%; /* Los submenús aparecen debajo del ítem del menú al que pertenecen */
+    left: 0; /* Los submenús aparecen alineados a la izquierda del ítem del menú */
+    background-color: #333333; /* Fondo del submenú es gris oscuro */
+    border-radius: 0 0 5px 5px; /* Borde redondeado en la parte inferior */
+    text-align: center;
+    padding-left: 10px; /**derecha*/
+    padding-right: 40px; /**izquierda*/
+    z-index: 999;
+  }
+
+  /* Estilo de cada ítem dentro del submenú */
+  .menu ul li ul.submenu li {
+    display: block; /* Cada ítem del submenú aparece en una línea nueva */
+    z-index: 1000;
+  }
+  .menu ul li:hover ul.submenu {
+    display: block; /* El submenú aparece cuando pasas el mouse sobre el ítem del menú */
+    z-index: 999;
+  }
+
+  /* Estilo de los enlaces dentro del submenú */
+  .menu ul li ul.submenu li a {
+    padding: 10px 30px; /* Espacio dentro del enlace del submenú */
+    text-align: center;
+    padding-left: 0px;
+    display: block;
+    z-index: 1000;
+  }
+
+  /* Cambio de color de fondo cuando pasas el mouse sobre el enlace del submenú */
+  .menu ul li ul.submenu li a:hover {
+    position: relative;
+    background-color: #363434; /* Cambia el color de fondo del enlace a gris oscuro cuando pasas el mouse */
+    transform: translateX(-19px);
+    text-align: center;
+    padding-left: 10px; /**derecha*/
+    padding-right: 20px; /**izquierda*/
+    z-index: 1000;
+  }
+
+  /**---------------------------------------------------------------------------------------------------------------------*/
+  .welcome {
+    padding: 0 auto;
+    margin: 0 auto;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 200%;
+    color: #cea800;
+    text-align: center;
+    position: relative;
+    left: 10%;
+    transform: translateY(-50px);
+  }
+
+  .Logo-Transxana img {
+    width: 300px;
+    height: auto;
+    position: relative;
+    left: 540px;
+    transform: translateY(20px);
+  }
+
+  /**----------------------------------------------CONTENEDOR-------------------------------------------------------------------*/
+  .contenedor {
+    padding: 10px;
+    margin: 1px;
+    width: 118%;
+  }
+  .tarjetas {
+    display: grid;
+    grid-template-rows: 300px 300px;
+    background-color: #039cd8;
+    border-radius: 10px;
+    padding: 0px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 10px;
+  }
+  /**------------------------------------------------CONTENIDO PROYECTOS--------------------------------------------------------*/
+  .contenedor-proyectos {
+    display: grid; /* Usamos flex para centrar el contenido */
+    grid-template-columns: 351%;
+    gap: 20px; /* Espacio entre filas y columnas */
+    margin: 0 auto;
+    transform: translateY(-280.1%);
+    height: 80px;
+    position: relative;
+    margin-left: 3.1%;
+    width: 26.7%;
+  }
+  .tarjetas-proyectos {
+    background-color: #fffcfc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra del contenedor */
+    transition: transform 0.3s ease;
+    height: 449px;
+  }
+
+  .p-contenido {
+    font-size: 22px;
+    text-align: start;
+  }
+
+  /**--------------------------------------------------------------------------------------------------------------------*/
+
+  /*----------------------------------------------- Pie de página *---------------------------------------------------------*/
+  footer {
+    background-color: #0b79d3;
+    color: #000000; /* Texto*/
+    text-align: center;
+    position: relative;
+    left: -50px;
+    padding: 20px 0; /* Espacio interno dentro del pie de página */
+    width: 125%; /* Añadido para mantener consistencia */
+    transform: translateY(48px);
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .copyright {
+    color: white;
+  }
+
+  .copyright:hover {
+    text-decoration: none;
+    font-size: 20px;
+    color: #9708f7 !important;
+    transition: color 0.2s;
+  }
+
+  footer .social-media a {
+    color: #007bff; /* texto */
+    margin: 0 10px; /* Espacio alrededor de cada enlace */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+  }
+
+  .social-media {
+    text-align: center; /* Centra los enlaces horizontalmente */
+    margin-top: 20px; /* Margen superior */
+  }
+
+  .social-link.youtube:hover {
+    color: #f70035 !important; /* efecto de cambiar de color al pasar el mouse */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  .social-link.facebook:hover {
+    color: #00b7ff !important; /* efecto de cambiar de color al pasar el mouse */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  .social-link.instagram:hover {
+    background: #833ab4;
+    background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+
+  .social-link.facebook {
+    color: #ffffff; /* texto */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  .social-link.youtube {
+    color: #ffffff; /* texto */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+
+  .social-link.instagram {
+    color: #ffffff; /* Texto */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+
+  .social-link.linkedin {
+    color: #ffffff; /* Color de LinkedIn */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px; /* Tamaño de fuente */
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  /*-----------------------------------------------------------------------------------------------------------------------------*/
+}
+
+/* Orientación horizontal (landscape) */
+@media screen and (orientation: landscape) {
+  /* Estilos específicos para dispositivos en modo horizontal */
+  html {
+    font-family: Arial, sans-serif; /* Usamos la letra Arial para todo el texto */
+    margin: 0; /* Quitamos el espacio en blanco alrededor de la página */
+    padding: 0; /* No agregamos espacio extra adentro de la página */
+    background-color: #f4f4f4; /* Ponemos el fondo de la página de color gris claro */
+    width: 83.7%;
+  }
+  /**----------------------------------------Menu-------------------------------------------------------------------------*/
+
+  .menu-container {
+    /* Contenedor del menú */
+    width: 87.4%; /* El menú ocupa todo el ancho de la página */
+    display: grid; /* Usamos flex para centrar el contenido */
+    justify-content: center; /* Centramos el contenido horizontalmente */
+    z-index: 1000;
+  }
+
+  .menu {
+    /* Estilo del menú principal */
+    background-color: #0b79d3; /* Color de fondo del menú amarillo */
+    padding: 3px 500px; /* Espacio dentro del menú para que no quede pegado al borde */
+    display: inline-block; /* El menú se ajusta automáticamente al tamaño de su contenido */
+    white-space: nowrap; /* Evita que las palabras se separen en líneas, manteniendo el menú en una sola línea */
+    position: relative; /* La posición del menú se ajusta respecto a su contenedor */
+    top: -8px; /*menú hacia arriba */
+    margin-left: 250px; /* Lo mueve un poquito hacia la derecha */
+    z-index: 1;
+  }
+
+  /* Estilo de la lista dentro del menú */
+  .menu ul {
+    list-style: none; /* Quita los puntos de la lista para que se vea más ordenado */
+    margin: 0; /* Quita el espacio entre los elementos de la lista */
+    padding: 0; /* Quita el espacio dentro de los elementos de la lista */
+    display: flex; /* Organiza los elementos de la lista uno al lado del otro */
+  }
+
+  /* Estilo de cada ítem de la lista del menú */
+  .menu ul li {
+    position: relative; /* La posición de cada ítem se ajusta respecto a su contenedor */
+    left: 20px;
+  }
+
+  /* Estilo de los enlaces dentro de cada ítem del menú */
+  .menu ul li a {
+    display: block; /* Hace que los enlaces ocupen todo el espacio disponible del ítem */
+    padding: 15px 20px; /* Espacio dentro del enlace para que se vea más grande y fácil de hacer clic */
+    color: white; /* Color del texto del enlace es blanco */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    transition: background-color 0.3s; /* El color de fondo cambia suavemente cuando pasas el mouse sobre el enlace */
+    z-index: 1000;
+  }
+
+  /* Cambio de color de fondo cuando pasas el mouse sobre el enlace */
+  .menu ul li a:hover {
+    background-color: #363434; /* Cambia el color de fondo del enlace a gris oscuro cuando pasas el mouse */
+    z-index: 1000;
+  }
+
+  /* Estilo del menú desplegable */
+  .menu ul li ul.submenu {
+    position: fixed;
+    display: none; /* Al principio, los submenús no se ven */
+    width: 90px;
+    position: absolute; /* Los submenús se colocan en una posición específica respecto al menú principal */
+    top: 100%; /* Los submenús aparecen debajo del ítem del menú al que pertenecen */
+    left: 0; /* Los submenús aparecen alineados a la izquierda del ítem del menú */
+    background-color: #333333; /* Fondo del submenú es gris oscuro */
+    border-radius: 0 0 5px 5px; /* Borde redondeado en la parte inferior */
+    text-align: center;
+    padding-left: 10px; /**derecha*/
+    padding-right: 40px; /**izquierda*/
+    z-index: 999;
+  }
+
+  /* Estilo de cada ítem dentro del submenú */
+  .menu ul li ul.submenu li {
+    display: block; /* Cada ítem del submenú aparece en una línea nueva */
+    z-index: 1000;
+  }
+  .menu ul li:hover ul.submenu {
+    display: block; /* El submenú aparece cuando pasas el mouse sobre el ítem del menú */
+    z-index: 999;
+  }
+
+  /* Estilo de los enlaces dentro del submenú */
+  .menu ul li ul.submenu li a {
+    padding: 10px 30px; /* Espacio dentro del enlace del submenú */
+    text-align: center;
+    padding-left: 0px;
+    display: block;
+    z-index: 1000;
+  }
+
+  /* Cambio de color de fondo cuando pasas el mouse sobre el enlace del submenú */
+  .menu ul li ul.submenu li a:hover {
+    position: relative;
+    background-color: #363434; /* Cambia el color de fondo del enlace a gris oscuro cuando pasas el mouse */
+    transform: translateX(-19px);
+    text-align: center;
+    padding-left: 10px; /**derecha*/
+    padding-right: 20px; /**izquierda*/
+    z-index: 1000;
+  }
+
+  /**---------------------------------------------------------------------------------------------------------------------*/
+  .welcome {
+    padding: 0 auto;
+    margin: 0 auto;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 200%;
+    color: #cea800;
+    text-align: center;
+    position: relative;
+    left: 10%;
+    transform: translateY(-50px);
+  }
+
+  .Logo-Transxana img {
+    width: 300px;
+    height: auto;
+    position: relative;
+    left: 540px;
+    transform: translateY(20px);
+  }
+
+  /**----------------------------------------------CONTENEDOR-------------------------------------------------------------------*/
+  .contenedor {
+    padding: 10px;
+    margin: 1px;
+    width: 118%;
+  }
+  .tarjetas {
+    display: grid;
+    grid-template-rows: 300px 300px;
+    background-color: #039cd8;
+    border-radius: 10px;
+    padding: 0px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 10px;
+  }
+  /**------------------------------------------------CONTENIDO PROYECTOS--------------------------------------------------------*/
+  .contenedor-proyectos {
+    display: grid; /* Usamos flex para centrar el contenido */
+    grid-template-columns: 351%;
+    gap: 20px; /* Espacio entre filas y columnas */
+    margin: 0 auto;
+    transform: translateY(-280.1%);
+    height: 80px;
+    position: relative;
+    margin-left: 3.1%;
+    width: 26.7%;
+  }
+  .tarjetas-proyectos {
+    background-color: #fffcfc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra del contenedor */
+    transition: transform 0.3s ease;
+    height: 449px;
+  }
+
+  .p-contenido {
+    font-size: 22px;
+    text-align: start;
+  }
+
+  /**--------------------------------------------------------------------------------------------------------------------*/
+
+  /*----------------------------------------------- Pie de página *---------------------------------------------------------*/
+  footer {
+    background-color: #0b79d3;
+    color: #000000; /* Texto*/
+    text-align: center;
+    position: relative;
+    left: -50px;
+    padding: 20px 0; /* Espacio interno dentro del pie de página */
+    width: 125%; /* Añadido para mantener consistencia */
+    transform: translateY(48px);
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .copyright {
+    color: white;
+  }
+
+  .copyright:hover {
+    text-decoration: none;
+    font-size: 20px;
+    color: #9708f7 !important;
+    transition: color 0.2s;
+  }
+
+  footer .social-media a {
+    color: #007bff; /* texto */
+    margin: 0 10px; /* Espacio alrededor de cada enlace */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+  }
+
+  .social-media {
+    text-align: center; /* Centra los enlaces horizontalmente */
+    margin-top: 20px; /* Margen superior */
+  }
+
+  .social-link.youtube:hover {
+    color: #f70035 !important; /* efecto de cambiar de color al pasar el mouse */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  .social-link.facebook:hover {
+    color: #00b7ff !important; /* efecto de cambiar de color al pasar el mouse */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  .social-link.instagram:hover {
+    background: #833ab4;
+    background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+
+  .social-link.facebook {
+    color: #ffffff; /* texto */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  .social-link.youtube {
+    color: #ffffff; /* texto */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+
+  .social-link.instagram {
+    color: #ffffff; /* Texto */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px;
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+
+  .social-link.linkedin {
+    color: #ffffff; /* Color de LinkedIn */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px; /* Espacio entre los enlaces */
+    font-size: 18px; /* Tamaño de fuente */
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+  }
+  /*-----------------------------------------------------------------------------------------------------------------------------*/
+}
